@@ -32,3 +32,33 @@ h1 {
     margin: 5px;
 }
 
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    margin-left: -250px;
+    background-color: rgb(142, 142, 255);
+    color: white;
+    transition: 0.5s;
+    height: 100vh;
+}
+
+#sidebar.active {
+    margin-left: 0;
+}
+
+.hamburguer {
+    position: absolute;
+    top:15px;
+    left: 15px;
+    color: black;
+    font-size: 30px;
+}
+.hamburguer.active {
+    display: none;
+}
+
