@@ -22,16 +22,16 @@
         <nav id="sidebar">
             <div class="side-container">
                 <div class="sidebar-title">
-                    <h3>Sidebar</h3>
+                    <!-- <h3>Sidebar</h3> -->
                 </div>
                 <div class="side-close">
                     <i class="fas fa-times"></i>
                 </div>
             </div>
             <ul>
-                <li>Notificações</li>
-                <li>Previsão completa</li>
-                <li>Sobre</li>
+                <li class='sidebarItens'>Notificações</li>
+                <li class='sidebarItens'>Previsão completa</li>
+                <li class='sidebarItens'>Sobre</li>
             </ul>
         </nav>
 
@@ -44,10 +44,21 @@
                 <i class="fas fa-bars"></i>
             </div>
 
+            <div class="alert alert-warning alert-dismissible fade show" style="padding-right: 10%;">
+                <h4 class="alert-heading"> Alerta </h4>
+                <img src="alerta01.svg" class="iconeAlerta">
+                A umidade do ar está baixa. <strong>Evite a prática de atividades ao ar livre.</strong>.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+
             <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel" data-touch="true"
                 data-interval="false">
                 <div class="carousel-inner">
                     <ol class="carousel-indicators hidden">
+                        
                         <li data-target="#tempo" data-slide-to="0" class="active"></li>
                         <li data-target="#uv" data-slide-to="1"></li>
                         <li data-target="#cardiaca" data-slide-to="2"></li>
@@ -63,20 +74,22 @@
 
                                         <div class="col-6 text-center">
                                             <div class="card-icon">
-                                                <i class="fas fa-temperature-high"></i>
+                                                <img src="temperatura.svg" alt='icone da temperatura' class="icones">
                                             </div>
                                             30&degC
                                         </div>
 
                                         <div class="col-6 text-center">
                                             <div class="card-icon">
-                                                <i class="fas fa-tint"></i>
+                                                <img src="umidade.svg" alt='icone da umidade' class="icones">
                                             </div>
                                             80%
                                         </div>
                                     </div>
                                 </div>
-
+                                <div class="botaoum col">
+                                    <button class="medir"> Medir com Aura</button>
+                                </div>
                             </div>
                         </div>
                         <div class="indicators"></div>
@@ -85,11 +98,15 @@
                     <div class="carousel-item" id="uv">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">UV</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                            </div>
+                                <h5 class="card-title">Niveis de UV</h5>
+                                <div style='display:flex'>
+                                    <img src="uv.svg" alt='icone do UV' class="icones" style="padding-right: 8%;">
+                                    <p class="card-text UVFCTEXT" >0.04</p>
+                                </div>
+                                <div class="botaoum col">
+                                    <button class="medir"> Medir com Aura</button>
+                                </div>
+                                </div>
                         </div>
                         <div class="indicators"></div>
                     </div>
@@ -98,10 +115,14 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Frequência cardíaca</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                            </div>
+                                <div style='display:flex'>
+                                    <img src="frequencia.svg" alt='icone da frequencia cardiaca' class="icones" style="padding-right: 10%;">     
+                                    <p class="card-text UVFCTEXT"> <strong>94</strong> bpm</p>
+                                </div>
+                                <div class="botaoum col">
+                                    <button class="medir"> Medir com Aura</button>
+                                </div>
+                                </div>
                         </div>
                         <div class="indicators"></div>
                     </div>
@@ -116,10 +137,10 @@
                 <div class="card-body">
                     <div class="container">
                         <div class="row">
-                            <div class="col-3 prev-icon">
-                                <i class="fas fa-cloud-moon-rain"></i>
+                            <div class="col-3 prev-icon" style="padding: 0%;">
+                                <img src="lua_chuva.svg" alt='icone representando uma noite com chuva' class="climaIcon">    
                             </div>
-                            <div class="col-9 prev-text">
+                            <div class="col-9 prev-text" style="padding-left: 15%;">
                                 <h5 class="card-title prev-title">Previsão do Tempo</h5>
                                 <p class="prev-info"><strong>Máxima:</strong> 26&degC</p>
                                 <p class="prev-info"><strong>Chuva:</strong> 90%</p>
@@ -134,14 +155,14 @@
             </div>
 
 
-            <div class="alert alert-warning alert-dismissible fade show">
+            <!-- <div class="alert alert-warning alert-dismissible fade show">
                 <h4 class="alert-heading">Alerta</h4>
                 A umidade do ar está baixa. <strong>Evite a prática de atividades ao ar livre.</strong>.
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-
+ -->
 
 
 
