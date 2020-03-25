@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 280.5 279" style="enable-background:new 0 0 280.5 279;" xml:space="preserve">
+	 viewBox="-179 101 280.5 279" style="enable-background:new -179 101 280.5 279;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#010202;stroke-width:9;stroke-miterlimit:10;}
 	.st1{fill:none;stroke:#010202;stroke-width:9;stroke-linecap:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-miterlimit:10;}
 </style>
 <g id="XMLID_1_">
-	<path id="XMLID_181_" class="st0" d="M171,166.6c-3.1-12-38.3-74.7-38.3-74.7L91.6,12l-41,79.9c0,0-35.2,62.7-38.3,74.7l-1.2,5.3
-		c-0.9,5-1.5,10-1.5,15.3c0,45.3,36.7,82,82,82c45.3,0,82-36.7,82-82c0-5.2-0.5-10.3-1.5-15.3L171,166.6z"/>
+	<path id="XMLID_181_" class="st0" d="M-8.5,265.3c-3.1-12-38.3-74.7-38.3-74.7l-37.6-73.1c-1.5-2.8-5.5-2.8-7,0l-37.5,73.1
+		c0,0-35.2,62.7-38.3,74.7l-1.2,5.3c-0.9,5-1.5,10-1.5,15.3c0,45.3,36.7,82,82,82s82-36.7,82-82c0-5.2-0.5-10.3-1.5-15.3L-8.5,265.3
+		z"/>
 	<g id="XMLID_178_">
-		<line id="XMLID_179_" class="st1" x1="270.4" y1="156" x2="195.7" y2="269.2"/>
-		<circle id="XMLID_180_" class="st1" cx="214.9" cy="179.2" r="20.9"/>
-		<circle id="XMLID_182_" class="st1" cx="251.1" cy="242.6" r="20.9"/>
+		<line id="XMLID_179_" class="st1" x1="90.9" y1="254.7" x2="16.2" y2="367.9"/>
+		<circle id="XMLID_180_" class="st1" cx="35.4" cy="277.9" r="20.9"/>
+		<circle id="XMLID_182_" class="st1" cx="71.6" cy="341.3" r="20.9"/>
 	</g>
 </g>
 <g id="XMLID_106_">
@@ -45,4 +47,5 @@
 </g>
 <g id="XMLID_120_">
 </g>
+<path class="st2" d="M-144.6,265.7c0,0-5.9,70.4,53,75.6"/>
 </svg>
