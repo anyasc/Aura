@@ -29,6 +29,7 @@
     
                 <div class="sidebar-title col-10">
                     <h3>Jane Doe </h3>
+                    <p id="connect-bt"><span class="text">Conectar</span></p>
                 </div>
                     
                 </div>
@@ -86,19 +87,19 @@
                                             <div class="card-icon">
                                                 <img src="temperatura.svg" alt='icone da temperatura' class="icones">
                                             </div>
-                                            30&degC
+                                            <span class="temperature">-</span>&degC
                                         </div>
 
                                         <div class="col-6 text-center">
                                             <div class="card-icon">
                                                 <img src="umidade.svg" alt='icone da umidade' class="icones">
                                             </div>
-                                            80%
+                                            <span class="humidity">-</span>%
                                         </div>
                                     </div>
                                 </div>
                                 <div class="botaoum col">
-                                    <button class="medir"> Medir com Aura</button>
+                                    <button class="medir" id="medir-dht">Medir com Aura</button>
                                 </div>
                             </div>
                         </div>
@@ -114,7 +115,7 @@
                                     <img src="uv.svg" alt='icone do UV' class="iconesUv">
                                     </div>
                                     <div class="col-6 ">
-                                    <p class="card-text UVFCTEXT" >0.04</p>
+                                    <p class="card-text UVFCTEXT" ><span class="uv">-</span></p>
                                      </div>
                                 </div>
                                 <div class="botaoum col">
@@ -224,7 +225,8 @@
         </div>
 
     </div>
-    <script src="./app.js"></script>
+    <script src="./script/app.js"></script>
+    <script src="./script/bluetooth.js"></script>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
