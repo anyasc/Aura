@@ -1,11 +1,36 @@
+body{
+    background-color: #2A59A3;
+}
+
+.icones{
+    height: 10vh;
+}
+
+
+.iconeAlerta{
+    
+    padding-left: 5%;
+    width: 20vw;
+    float: right;  
+    z-index: 0;
+    opacity: 20%;
+}
+
+
 .card {
+    border-color: #7c7c7c;
+    border-width: 2px;
     width: 100%;
+    height: 60vw;
+    border-radius: 3%;
 }
 
 h1 {
     text-align: center;
     padding: 10px 0 30px 0;
+    color: #f3ecf0;
 }
+
 
 .carousel-indicators {
     margin-top: -50px;
@@ -14,7 +39,7 @@ h1 {
 
 .carousel-indicators > li {
     border-radius: 50%;
-    background-color: #55f;
+    background-color: rgb(236, 236, 248);
     width: 5px;
     height: 5px;
 }
@@ -30,42 +55,52 @@ h1 {
 
 .alert {
     margin: 5px;
+    margin-bottom: 10%;
 }
 
 .wrapper {
     display: flex;
     width: 100%;
     align-items: stretch;
+    height: 100hw;
+    
 }
 #sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    margin-left: -250px;
+    min-width: 415px;
+    max-width: 415px;
+    margin-left: -415px;
     /* background-color: rgb(142, 142, 255); */
-    background-color: rgb(45, 45, 100);
+    background-color: #2f2f30;
     color: white;
     transition: 0.5s;
-    height: 100vh;
+    height: auto;
 }
 
 #sidebar.active {
     margin-left: 0;
+    margin-right: 0;
+   
 }
 
-.side-container {
-    /* display: flex; */
-}
+/* .side-container {
+    display: flex;
+} */
 
 .side-close {
-    margin-left: 100px;
-    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 20px;
     font-size: 30px;
     text-align: end;
     float: right;
+  
 }
 
 .sidebar-title {
+    text-align: center;
+    color: #f3ecf0;
     padding: 5px;
+    top: 23px!important;
+    padding-right: 13%;
 }
 
 #content {
@@ -75,11 +110,12 @@ h1 {
 
 .hamburguer {
     position: absolute;
-    top:15px;
+    top:20px;
     left: 15px;
-    color: black;
+    color: rgb(255, 248, 248);
     font-size: 30px;
-    transition: 1.5s;
+    transition: 2s;
+
 }
 .hamburguer.active {
     display: none;
@@ -102,8 +138,19 @@ h1 {
     margin: 0;
 }
 
-.icones{
-    height: 10vh;
+.cidade{
+    margin-bottom: 5%;
+    color: #2a59a3;
+  
+}
+
+h6{
+    font-weight: bold;
+    
+    padding-top: 5%;
+    text-align: center;
+    
+    
 }
 
 .climaIcon{
@@ -113,60 +160,66 @@ h1 {
 
 }
 
+.climaSemana{
+    height:7vh;
+
+}
+
+.iconesUv{
+    height: 15vh;
+    padding-top: 5%;
+    margin-left: 30%!important;
+    
+}
+
+.previsaoAPI{
+    margin-top: 5%;
+    text-align: center;
+    color: #2a59a3;
+}
+
 .sidebarItens{
     font-size: 20px;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
+    bottom: 10;
 }
 
-.iconeAlerta{
-    
-    padding-left: 5%;
-    width: 20vw;
-    float: right;  
-    z-index: 0;
-    opacity: 20%;
-}
 
 .UVFCTEXT{
-    padding-top: 10%; 
+    padding-top: 20%; 
     font-size: 30px;
     
 }
 
 .medir{
     
-    box-shadow:inset 0px 1px 0px 0px #ffffff;
-	/* background:linear-gradient(to bottom, #ebe8e8 5%, #eeeeee 100%);
-	background-color:#2892a5; */
-	border-radius:10px;
-	border:1px solid #b9b7b7;
+	background-color:#2a58a3;
+	border-radius:28px;
+	border:1px solid #4e6096;
 	display:inline-block;
 	cursor:pointer;
-	color:#333333;
+	color:#ffffff;
 	font-family:Arial;
-	font-size:15px;
+	font-size:17px;
 	font-weight:bold;
 	padding:5px 15px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
+	text-shadow:0px 1px 0px #283966;
 }
 
 .medir:hover {
-	background:linear-gradient(to bottom, #b4bafa 5%, #9cb2b6 100%);
-	background-color:#b4bafa;
+    background-color:#7ba3d4;
 }
 .medir:active {
 	position:relative;
-    top:1px;
-    border: midnightblue;
-    background:linear-gradient(to bottom, #7c7c7c 5%, #5e5e5e 100%);
-    color:#b8b8b8;
+	top:1px;
 }
 
 .botaoum{
-    margin-top: 8%;
+    margin-top: 10%;
     
     margin-left: 20%;
     margin-right: 20%;
   
 }
+
