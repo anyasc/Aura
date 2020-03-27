@@ -1,0 +1,376 @@
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #2A59A3;
+  height: 900px;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px 0 30px 0;
+  color: #f3ecf0;
+}
+
+h6 {
+  font-weight: bold;
+  padding-top: 5%;
+  text-align: center;
+}
+
+.icones {
+  height: 10vh;
+}
+
+.iconeAlerta {
+  padding-left: 5%;
+  width: 20vw;
+  float: right;
+  z-index: 0;
+  opacity: 20%;
+}
+
+.card {
+  border-color: #7c7c7c;
+  border-width: 2px;
+  width: 100%;
+  height: 60vw;
+  border-radius: 3%;
+}
+
+.carousel-indicators {
+  margin-top: -50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel-indicators > li {
+  border-radius: 50%;
+  background-color: #ececf8;
+  width: 5px;
+  height: 5px;
+}
+
+.carousel-indicators > li.active {
+  width: 8px;
+  height: 8px;
+}
+
+.indicators {
+  height: 50px;
+}
+
+.alert {
+  margin: 5px;
+  margin-bottom: 10%;
+  border-color: #ffb905;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: 900px;
+}
+
+#sidebar {
+  min-width: 415px;
+  max-width: 415px;
+  margin-left: -415px;
+  /* background-color: rgb(142, 142, 255); */
+  background-color: #47474d;
+  color: #f4f4f4;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: auto;
+}
+
+#sidebar .modal-content {
+  width: 68% !important;
+}
+
+#sidebar .modal-header {
+  padding: 0;
+}
+
+#sidebar .modal-title {
+  font-size: 20px;
+  padding: 5%;
+}
+
+#sidebar.active {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.side-container h4 {
+  font-size: 25px;
+  padding: 8% 5% 8% 5%;
+  color: #ffb905;
+  font-weight: bold;
+}
+
+.side-container a {
+  margin-top: 55% !important;
+  font-size: 25px;
+  padding: 8% 5% 8% 5%;
+  color: #ffb905;
+  font-weight: bold;
+}
+
+.side-close {
+  margin-left: 15px;
+  margin-top: 20px;
+  font-size: 30px;
+  text-align: end;
+  float: right;
+}
+
+.sidebar-title {
+  text-align: center;
+  color: #f3ecf0;
+  padding: 5px;
+  top: 23px !important;
+  padding-right: 13%;
+  margin-bottom: 10%;
+}
+
+.buttonGrid .medir {
+  margin: 2%;
+  text-align: center;
+  background-color: #47474d;
+  border-color: #ffb905;
+  height: 40px;
+  width: 150px;
+}
+
+.buttonGrid .medir:hover {
+  background-color: #ffb905;
+  color: #202020;
+}
+
+.buttonGrid .medir:active {
+  background-color: #ffb905;
+  color: #202020;
+  font-weight: bold;
+}
+
+.buttonGrid .col-5 {
+  margin-left: 20px !important;
+  padding-top: 0;
+  padding-bottom: 5px;
+}
+
+.buttonGrid .bluetoothButton {
+  margin: 2%;
+  text-align: center;
+  background-color: #254e8f;
+  border-width: 2px;
+  border-color: #152d52;
+  height: 43px;
+  width: 152px;
+}
+
+.buttonGrid .bluetoothButton:active {
+  background-color: #17177f;
+}
+
+.buttonGrid .bluetoothButton:hover {
+  background-color: #17177f;
+}
+
+#content {
+  max-width: 95vw;
+  padding: 2vw;
+}
+
+.hamburguer {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  color: #fff8f8;
+  font-size: 30px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.hamburguer.active {
+  display: none;
+}
+
+.card-body {
+  padding: 10px 10px 5px 10px;
+}
+
+.card-icon {
+  font-size: 50px;
+}
+
+.prev-icon {
+  font-size: 70px;
+  padding: 15px 15px 0 15px;
+}
+
+.prev-info {
+  margin: 0;
+}
+
+.cidade {
+  margin-bottom: 5%;
+  color: #2A59A3;
+}
+
+.climaIcon {
+  height: 15vh;
+  margin: 5%;
+  padding-bottom: 5%;
+}
+
+.modal-body .card-title {
+  text-align: center;
+  font-size: 20px;
+}
+
+.modal-body .climaIcon {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 0;
+  height: 20vh;
+  padding: 0;
+}
+
+.modal-body .prev-info {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5%;
+}
+
+.modal-body .tempoMm {
+  text-align: center;
+  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0;
+}
+
+.tempSemana {
+  text-align: center;
+}
+
+.climaSemana {
+  height: 7vh;
+  margin-left: 20%;
+}
+
+.iconesUv {
+  height: 15vh;
+  padding-top: 5%;
+  margin-left: 30% !important;
+}
+
+.heart {
+  height: 11vh;
+  padding-top: 5%;
+  margin-top: 5%;
+  margin-left: 30% !important;
+  margin-bottom: 6%;
+}
+
+.previsaoAPI {
+  text-align: center;
+  color: #2A59A3;
+  margin: 10% 18%;
+}
+
+.sidebarItens {
+  font-size: 20px;
+  padding-bottom: 5%;
+  bottom: 10;
+}
+
+.UVFCTEXT {
+  padding-top: 20%;
+  font-size: 30px;
+}
+
+.medir {
+  background-color: #29579f;
+  border-radius: 28px;
+  border: 1px solid #4e6096;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 5px 15px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #283966;
+}
+
+.medir:hover {
+  background-color: #7ba3d4;
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.medir:active {
+  position: relative;
+  top: 1px;
+}
+
+.bluetoothButton {
+  background-color: #29579f;
+  border-radius: 28px;
+  border: 1px solid #4e6096;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 5px 15px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #283966;
+}
+
+.bluetoothButton:hover {
+  background-color: #7ba3d4;
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.bluetoothButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.botaoum {
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+/*# sourceMappingURL=sass.css.map */
