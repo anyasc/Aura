@@ -30,12 +30,14 @@
         
                 <div class="row buttonGrid">
                     <div class="col-5">
-                <p id="connect-bt" class="medir" style="text-align: center; padding-top: 6%; padding-right: 20%;"> <i class="fab fa-bluetooth-b"></i> <span class="text">Conectar</span><span></span></p>
+                <p id="connect-bt" class="medir" style=" padding-top: 6%; padding-right: 20%;"> 
+                    <i style="float:left!important; margin-right: 40px;" class="fab fa-bluetooth-b"></i> <span class="text">Conectar</span></p>
                     </div> 
                 </div>
                 <div class="row buttonGrid">
                     <div class="col-5">
-                <button type="button" class="btn btn-info btn-lg medir" data-toggle="modal" data-target="#myModal9">historico</button>
+                <button type="button" class="btn btn-info btn-lg medir" data-toggle="modal" data-target="#myModal9">
+                     <span ><i style="float:left!important; margin-right: 35px;" class="fas fa-history"></i></span> histórico</button>
                     </div>
                 
                     <!-- Modal -->
@@ -45,59 +47,129 @@
                         <!-- Modal content-->
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title">historico</h4>
+                                <h4 class="modal-title">histórico</h4>
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                             </div>
-                            <div class="modal-body">
-                            <p>Some text in the modal.</p>
+                            <div class="modal-body" style="padding-right: 5%;">
+
+
+                                <h6 class='cidade'>Ontem</h6>
+
+                        <div class="row"> 
+                            <div  class="col-4" >
+                            <h6 class="tempSemana">
+                                Manhã
+                            </h6>
+                            <img src="./img/sol.svg" alt='icone representando um dia de sol' class="climaSemana historico">   
+                            <p class="climaSemana tempSemana">41&degC / 20&degC</p> 
+                            </div>
+                            <div  class="col-4">
+                            <h6 class="tempSemana">
+                                Tarde
+                            </h6>
+                            <img src="./img/sol_chuva.svg"   alt='icone representando uma Lua' class="climaSemana historico"> 
+                            <p class="climaSemana tempSemana">15&degC / 20&degC</p> 
+                            </div>
+                            <div  class="col-4">
+                            <h6 class="tempSemana">
+                                Noite
+                            </h6>
+                            <img src="./img/lua.svg" alt='icone representando uma Lua' class="climaSemana historicoLua"> 
+                            <p class="climaSemana tempSemana">17&degC / 22&degC</p> 
                             </div>
 
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                        <p class="prev-info" ><strong>Preciptação: </strong>  80%</p>
+                            </div>
+                            <div class="col-6">
+                        <p class="prev-info" ><strong>UV Geral: </strong>  Baixo</p>   
+                            </div>
+                        </div>
+
+<!-- 
+                        <h6  class='dia'>1 de abril</h6>
+
+                        <div class="row"> 
+                            <div  class="col-4" >
+                            <h6 class="tempSemana">
+                                Manhã
+                            </h6>
+                            <img src="./img/sol.svg" alt='icone representando um dia de sol' class="climaSemana historico">   
+                            <p class="climaSemana tempSemana">41&degC / 20&degC</p> 
+                            </div>
+                            <div  class="col-4">
+                            <h6 class="tempSemana">
+                                Tarde
+                            </h6>
+                            <img src="./img/sol_chuva.svg"   alt='icone representando uma Lua' class="climaSemana historico"> 
+                            <p class="climaSemana tempSemana">15&degC / 20&degC</p> 
+                            </div>
+                            <div  class="col-4">
+                            <h6 class="tempSemana">
+                                Noite
+                            </h6>
+                            <img src="./img/lua.svg" alt='icone representando uma Lua' class="climaSemana historicoLua"> 
+                            <p class="climaSemana tempSemana">17&degC / 22&degC</p> 
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                        <p class="prev-info" ><strong>Preciptação: </strong>  80%</p>
+                            </div>
+                            <div class="col-6">
+                        <p class="prev-info" ><strong>UV Geral: </strong>  Baixo</p>   
+                            </div>
+                        </div> -->
+
+                            </div>
 
                         </div>
                         </div>
                     </div> 
                 </div>
-           
+           <div>
+               <p class="subtitle">Notificações</p>
+           </div>
      
-                    <div class="row buttonGrid">
-                        <div class="col-5">
-                    <button type="button" class="btn btn-info btn-lg medir" data-toggle="modal" data-target="#myModal1">Alertas</button>
+                    <div class="row buttonGrid" style="margin-bottom: 0;">
+                        <div class="col-5"style="margin-bottom: 0;">
+                    <button type="button" class=" medir" style=" margin-right: 35px; border-radius: 18px 18px 0 0; margin-bottom: 0; border-bottom: 0.5;"> <span ><i style="float:left!important; margin-right: 35px; margin-top: 2%;" class="fas fa-exclamation-triangle"></i></span> Alertas <span style="float:right!important;">
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                          </label>
+                    </span></button>
                         </div>  
-
-
-
-                       <!-- Modal -->
-                       <div class="modal fade" id="myModal1" role="dialog">
-                        <div class="modal-dialog modal-sm modal-dialog-centered">
-                        
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Alertas</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                            <p>Some text in the modal.</p>
-                            </div>
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-
-                        </div>
-                        </div>
                     </div>
-
+                    <div class="row buttonGrid" style="margin-top: 0; margin-bottom: 0;">
+                        <div class="col-5" style="margin-top: 0; margin-bottom: 0;">
+                    <button type="button" class=" medir" style=" margin-right: 35px; border-radius: 0; margin-top:0;border-top: 0; margin-bottom: 0; border-bottom: 0.5;"> <span ><i style="float:left!important;  margin-right: 35px; margin-top: 2%;" class="fas fa-cloud"></i></span> pulseira <span  style="float:right!important;">
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                          </label>
+                    </span></button>
+                        </div>  
+                    </div>     
+                    <div class="row buttonGrid" style="margin-top: 0;">
+                        <div class="col-5" style="margin-top: 0;">
+                    <button type="button" class=" medir" style=" margin-right: 35px; border-radius: 0 0 18px 18px; margin-top:0;border-top: 0; "> <span > <i style="float:left!important;  margin-right: 35px; margin-top: 2%;" class="fas fa-glass-whiskey"></i></span> água <span style="float:right!important;">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                          </label>
+                    </span></button>
+                        </div>  
                     </div>
-
+                    
                     <div class="row buttonGrid">
                         <div class="col-5">
-                    <button type="button" class="btn btn-info btn-lg medir " data-toggle="modal" data-target="#myModal2">Sobre</button>
+                    <button type="button" class="btn btn-info btn-lg medir " data-toggle="modal" data-target="#myModal2" style=" margin-right: 36px; margin-left: 3%;" > <span ><i style="float:left!important; margin-right: 36px; margin-left: 3%;" class="fas fa-info"></i></span> Sobre </button>
                         </div>
                     
  
@@ -113,13 +185,11 @@
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
                                 <div class="modal-body">
-                                <p>Some text in the modal.</p>
+                                <p>Aura is a project created to help people dwell better with sudden climate changes and well as prepare oneself for different weather circumstances and know it with precision due to the sensors present in the bracelet.<br><br>
+                                    Note that aura is a prototype still under development, by using it you agree and acknowledge that the app is subjected to possible changes and new features, as well as termination of current ones.
+                                </p>
                                 </div>
 
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                    </div>
 
                             </div>
                             </div>    

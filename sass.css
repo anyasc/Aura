@@ -7,6 +7,10 @@ a {
   color: #f4f4f4;
 }
 
+.close {
+  font-size: 35px;
+}
+
 body {
   background-color: #2A59A3;
   height: auto;
@@ -53,6 +57,12 @@ h6 {
   margin-bottom: 10%;
 }
 
+.card .modal-content {
+  margin-left: 2%;
+  margin-top: 5%;
+  width: 85%;
+}
+
 .modal-backdrop {
   height: 120vh;
   width: 100%;
@@ -80,15 +90,76 @@ h6 {
   border-color: #841919;
 }
 
-.modal-content {
+.subtitle {
+  color: #f4f4f4;
+  margin-bottom: 1px;
   margin-left: 2%;
-  margin-top: 5%;
-  width: 85% !important;
+  font-size: 15px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 23px;
+  margin-top: 10%;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #999999;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .3;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 50%;
+  border-width: 4px;
+  border-color: black;
+}
+
+input:checked + .slider {
+  background-color: #2A59A3;
+  width: 45px;
+  height: 23px;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 5px #2196F3;
+          box-shadow: 0 0 5px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+  left: -2px;
 }
 
 .buttonGrid .medir {
   margin: 2%;
-  text-align: center;
+  text-align: left;
   background-color: #f4f4f4;
   border-width: 3px;
   border-color: #20437a;
@@ -150,6 +221,11 @@ h6 {
   border-color: #600735;
 }
 
+.buttonGrid .bluetoothDisable .modal-content {
+  margin-left: 2%;
+  width: 100% !important;
+}
+
 #content {
   max-width: 95vw;
   padding: 2vw;
@@ -173,10 +249,9 @@ h6 {
   padding: 10px 10px 5px 10px;
 }
 
-.card-body .card-title {
-  margin-bottom: 5%;
-  padding-left: 0;
+.card-body .prev-title {
   margin-left: 0;
+  padding-left: 0;
 }
 
 .card-body .row {
@@ -193,11 +268,21 @@ h6 {
 }
 
 .prev-info {
-  margin: 0;
+  margin: 0 0 0 10%;
 }
 
 .cidade {
   margin-bottom: 5%;
+  color: #2A59A3;
+  font-size: 20px;
+}
+
+.dia {
+  text-align: center;
+  margin-left: 5%;
+}
+
+.chUV {
   color: #2A59A3;
 }
 
@@ -213,18 +298,16 @@ h6 {
 
 .modal-body {
   padding-left: 5%;
-  padding-right: 10%;
+  padding-right: 5%;
 }
 
 .modal-body .card-title {
   text-align: center;
   font-size: 20px;
-  margin-right: 23%;
 }
 
 .modal-body .climaIcon {
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 60%;
   margin-bottom: 0;
   height: 20vh;
   padding: 0;
@@ -264,13 +347,62 @@ h6 {
   margin-right: 4%;
 }
 
+.modal-body .card {
+  border-width: 1px;
+  border-color: #2A59A3;
+  border-radius: 15px;
+}
+
+.modal-body .card-body {
+  background-color: #d7e3f5;
+  border-radius: 15px;
+}
+
+.prevWHole .historicoLua {
+  margin-left: 30%;
+  width: 12vw;
+}
+
+.prevWHole .historico {
+  margin-left: 20%;
+}
+
+.prevWHole .tempSemana {
+  text-align: center;
+  margin-left: 10%;
+  margin-bottom: 0;
+  margin-top: 15%;
+}
+
+.prevWHole .climaSemana {
+  height: 7vh;
+  margin-top: 5%;
+}
+
+.prevWHole .card-title {
+  margin-bottom: 5%;
+  margin-left: 10%;
+}
+
+.historicoLua {
+  margin-left: 30%;
+  width: 12vw;
+}
+
+.historico {
+  margin-left: 20%;
+}
+
 .tempSemana {
   text-align: center;
   margin-left: 10%;
+  margin-bottom: 0;
+  margin-top: 5%;
 }
 
 .climaSemana {
   height: 7vh;
+  margin-top: 5%;
 }
 
 .iconesUv {
@@ -288,14 +420,6 @@ h6 {
   margin-right: 5%;
 }
 
-.heart {
-  height: 11vh;
-  padding-top: 5%;
-  margin-top: 5%;
-  margin-left: 30% !important;
-  margin-bottom: 6%;
-}
-
 .previsaoAPI {
   text-align: center;
   color: #2A59A3;
@@ -310,7 +434,7 @@ h6 {
 
 .medir {
   background-color: #29579f;
-  border-radius: 28px;
+  border-radius: 18px;
   border: 1px solid #4e6096;
   display: inline-block;
   cursor: pointer;

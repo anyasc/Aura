@@ -23,7 +23,7 @@
             <h1>Aura</h1>
                   
             <div class="hamburguer">
-                <a href="config.html"><spam><i class="fa fa-user"></i></spam></a>
+                <a href="config.html"><spam><i class="fa fa-user-cog"></i></spam></a>
             </div>
 
             <div class="alert  alert-warning alert-dismissible fade show" style="padding-right: 10%;">
@@ -81,7 +81,7 @@
                         <h5 class="card-title prev-title col">Previsão do Tempo</h5>
                     </div>
                     <div class="row"  style="margin-left: 0!important;">
-                        <h5 class="card-title prev-title cidade col">São Paulo</h5>
+                        <h5 class="card-title prev-title cidade" >São Paulo</h5>
                     </div>
                         <div class="row">
                             <div class="col-5 prev-icon" style="padding: 0%;">
@@ -90,41 +90,50 @@
                             </div>
                             <div class="col-6 prev-text" >
                                 
-                                <p class="card-title prev-title" style="margin-top: 1%;">Segunda-feira</p>
+                                <p class="card-title prev-title" style="margin-top: 1%; margin-left: 10%; ">Segunda-feira</p>
                                 <p class="prev-info"><strong>Máxima:</strong> 26&degC</p>
                                 <p class="prev-info"><strong>Mínima:</strong> 18&degC</p>
                                 <p class="prev-info"><strong>Chuva:</strong> 90%</p>
                             </div>
                         
+                        
+                            <!-- /////////////////////////////////////////////////// -->
+
                         </div>
                             <div class='row semana'>
 
-                                <div class="container">
+                                <div class="container-fluid">
                                     <div style='padding-left: 5%'>
                                     <!-- Trigger the modal with a button -->
                                     <button type="button" class="btn btn-info btn-lg medir previsaoAPI" data-toggle="modal" data-target="#myModal">Previsão completa</button>
                                 </div>
-                                    <!-- Modal -->
+
+
+
+
+
+                                    <!-- Modal ------------------------------------------------------------------------------------------>
                                     <div class="modal fade" id="myModal" role="dialog">
                                       <div class="modal-dialog">
                                       
                                         <!-- Modal content-->
-                                        <div class="modal-content">
+                                        <div class="modal-content prevWHole">
                                           <div class="modal-header">
                                             <h4 class="modal-title">Previsão do Tempo</h4>
-                                            <button type="button" class=" close " data-dismiss="modal" style="margin-left: 0!important;">&times;</button>
+                                            <button type="button" class=" close " data-dismiss="modal" >&times;</button>
 
                                           </div>
                                           <div class="modal-body">
                                             <div class="container">
-                                            <div class="row">
-                                                <div class="col">
-                                                <h5 class="card-title prev-title cidade" >São Paulo</h5>
-                                                </div>
-                                            </div>
+                                           
+                                                
+                                                <h5 class="card-title prev-title cidade" style="margin-right: 5%;">São Paulo</h5>
+                                                <h5 class='dia'>6 de abril, segunda-feira</h5>
+
+                                               
 
                                             <div class="row">
-                                            <div class="col prev-icon" style="padding-right: 50%;">
+                                            <div class="col prev-icon" style="padding-right: 70%;">
                                                  <img src="./img/lua_chuva.svg" alt='icone representando uma noite com chuva' class="climaIcon">   
                                             </div>
                                             </div>
@@ -139,16 +148,27 @@
                                                 
                                             </div>
 
-                                            <div class="row">
-                                             
-                                                    <p class="prev-info" ><strong>Chuva: </strong>  90%</p>
 
-                                                    <p class="prev-info" style="margin-left: 6%!important;"><strong>Nivel de UV: </strong>  Baixo</p>   
-                                             
+                                            
+                                            <div class="card"  style="height: 10vh;">
+                                                <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-6">
+                                            <p class="prev-info" ><strong class="chUV">Chuva: </strong>  80%</p>
+                                                </div>
+                                                <div class="col-6">
+                                            <p class="prev-info" ><strong class="chUV">UV: </strong>  Baixo</p>   
+                                                </div>
                                             </div>
-                                                
-                                            <div class="row"> 
-                                                <div  class="col-3"  style="padding-left: 0;">
+                                                </div>
+                                            </div>
+                                            
+
+                                            
+                                            <div class="card" style="height: 20vh;">
+                                                <div class="card-body" style="padding-right: 5%;">
+                                            <div class="row" style="padding-left: 0; margin-left: 0;"> 
+                                                <div  class="col-3"  style="padding-left: 0; margin-left: 0;">
                                                     <h6 class="tempSemana">
                                                         dom
                                                     </h6>
@@ -166,22 +186,29 @@
                                                     <h6 class="tempSemana">
                                                         Ter
                                                     </h6>
-                                                    <img src="./img/tempestade.svg"   alt='icone representando uma tempestade' class="climaSemana"> 
+                                                    <img src="./img/tempestade.svg"   alt='icone representando uma tempestade' style="width: 11vw; padding-left: 0;" class="climaSemana"> 
                                                     <p class="climaSemana tempSemana">15&degC  20&degC</p> 
                                                     </div>
                                                     <div  class="col-3">
                                                     <h6 class="tempSemana">
                                                         Qua
                                                     </h6>
-                                                    <img src="./img/sol.svg" alt='icone representando um dia com chuva' class="climaSemana"> 
+                                                    <img src="./img/sol.svg" alt='icone representando um dia com chuva' style="margin-right: 5%;" class="climaSemana"> 
                                                     <p class="climaSemana tempSemana">17&degC  22&degC</p> 
                                                     </div>
                                             </div>
-                                          </div>
-                                          <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                 </div>
+                                            </div>
+                                            
+
+
+
                                           </div>
                                         </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-default chUV" data-dismiss="modal"><strong> Close </strong></button>
+                                          </div>
+                                        
                                         </div>       
                                       </div>
                                     </div>
