@@ -94,7 +94,7 @@ h6 {
   color: #f4f4f4;
   margin-bottom: 1px;
   margin-left: 2%;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .switch {
@@ -172,18 +172,19 @@ input:checked + .slider:before {
 
 .buttonGrid .medir:hover {
   background-color: #ffb905;
-  color: #202020;
+  color: #f4f4f4;
 }
 
 .buttonGrid .medir:active {
   background-color: #ffb905;
-  color: #202020;
+  color: #f4f4f4;
   font-weight: bold;
 }
 
 .buttonGrid .col-5 {
   margin-bottom: 3%;
   padding-top: 0;
+  padding-left: 6%;
 }
 
 .buttonGrid .bluetoothDisable {
@@ -203,9 +204,6 @@ input:checked + .slider:before {
 }
 
 .buttonGrid .bluetoothDisable:hover {
-  background-color: #254e8f;
-  color: #f4f4f4;
-  font-weight: bold;
   background-color: #254e8f;
   color: #f4f4f4;
   font-weight: bold;
@@ -448,7 +446,8 @@ input:checked + .slider:before {
 }
 
 .medir:hover {
-  background-color: #7ba3d4;
+  background-color: #ffb905;
+  color: #f4f4f4;
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
 }
@@ -456,6 +455,8 @@ input:checked + .slider:before {
 .medir:active {
   position: relative;
   top: 1px;
+  background-color: #ffb905;
+  color: #f4f4f4;
 }
 
 .botaoum {
