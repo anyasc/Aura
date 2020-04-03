@@ -1,16 +1,19 @@
 a {
   text-decoration: none;
+  color: #f4f4f4;
 }
 
 body {
   background-color: #2A59A3;
-  height: 900px;
+  height: auto;
+  width: 100vw;
 }
 
 h1 {
   text-align: center;
   padding: 10px 0 30px 0;
   color: #f3ecf0;
+  margin-top: 2vw;
 }
 
 h6 {
@@ -29,10 +32,6 @@ h6 {
   margin-top: 10px;
 }
 
-.icones {
-  height: 10vh;
-}
-
 .iconeAlerta {
   padding-left: 5%;
   width: 20vw;
@@ -45,31 +44,14 @@ h6 {
   border-color: #7c7c7c;
   border-width: 2px;
   width: 100%;
-  height: 60vw;
+  height: 105vw;
   border-radius: 3%;
+  margin-bottom: 10%;
 }
 
-.carousel-indicators {
-  margin-top: -50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.carousel-indicators > li {
-  border-radius: 50%;
-  background-color: #ececf8;
-  width: 5px;
-  height: 5px;
-}
-
-.carousel-indicators > li.active {
-  width: 8px;
-  height: 8px;
-}
-
-.indicators {
-  height: 50px;
+.modal-backdrop {
+  height: 120vh;
+  width: 100%;
 }
 
 .alert {
@@ -94,86 +76,22 @@ h6 {
   border-color: #841919;
 }
 
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  height: 900px;
-}
-
-#sidebar {
-  min-width: 415px;
-  max-width: 415px;
-  margin-left: -415px;
-  /* background-color: rgb(142, 142, 255); */
-  background-color: #47474d;
-  color: #f4f4f4;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  height: auto;
-}
-
-#sidebar .modal-content {
-  width: 68% !important;
-}
-
-#sidebar .modal-header {
-  padding: 0;
-}
-
-#sidebar .modal-title {
-  font-size: 20px;
-  padding: 5%;
-}
-
-#sidebar.active {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.side-container h4 {
-  font-size: 25px;
-  padding: 8% 5% 8% 5%;
-  color: #ffb905;
-  font-weight: bold;
-}
-
-.side-container a {
-  margin-top: 55% !important;
-  font-size: 25px;
-  padding: 8% 5% 8% 5%;
-  color: #ffb905;
-  font-weight: bold;
-}
-
-.side-close {
-  margin-left: 15px;
-  margin-top: 20px;
-  font-size: 30px;
-  text-align: end;
-  float: right;
-}
-
-.sidebar-title {
-  text-align: center;
-  color: #f3ecf0;
-  padding: 5px;
-  top: 23px !important;
-  padding-right: 13%;
-  margin-bottom: 10%;
+.modal-content {
+  margin-left: 2%;
+  margin-top: 5%;
+  width: 85% !important;
 }
 
 .buttonGrid .medir {
   margin: 2%;
   text-align: center;
-  background-color: #47474d;
-  border-color: #ffb905;
-  height: 40px;
-  width: 150px;
+  background-color: #f4f4f4;
+  border-width: 2px;
+  border-color: #20437a;
+  height: 50px;
+  width: 360px;
+  color: #202020;
+  font-weight: lighter !important;
 }
 
 .buttonGrid .medir:hover {
@@ -188,27 +106,43 @@ h6 {
 }
 
 .buttonGrid .col-5 {
-  margin-left: 20px !important;
+  margin-bottom: 3%;
   padding-top: 0;
-  padding-bottom: 5px;
 }
 
-.buttonGrid .bluetoothButton {
+.buttonGrid .bluetoothDisable {
   margin: 2%;
   text-align: center;
+  height: 50px;
+  width: 360px;
+  background-color: #a70b5c;
+  border-width: 5px;
+  border-color: #600735;
+  color: #f4f4f4;
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 28px;
+  cursor: pointer;
+}
+
+.buttonGrid .bluetoothDisable:hover {
   background-color: #254e8f;
-  border-width: 2px;
-  border-color: #152d52;
-  height: 43px;
-  width: 152px;
+  color: #f4f4f4;
+  font-weight: bold;
+  background-color: #254e8f;
+  color: #f4f4f4;
+  font-weight: bold;
+  border-width: 5px;
+  border-color: #600735;
 }
 
-.buttonGrid .bluetoothButton:active {
-  background-color: #17177f;
-}
-
-.buttonGrid .bluetoothButton:hover {
-  background-color: #17177f;
+.buttonGrid .bluetoothDisable:active {
+  background-color: #254e8f;
+  color: #f4f4f4;
+  font-weight: bold;
+  border-width: 5px;
+  border-color: #600735;
 }
 
 #content {
@@ -234,6 +168,16 @@ h6 {
   padding: 10px 10px 5px 10px;
 }
 
+.card-body .card-title {
+  margin-bottom: 5%;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.card-body .row {
+  margin-left: 5%;
+}
+
 .card-icon {
   font-size: 50px;
 }
@@ -252,15 +196,25 @@ h6 {
   color: #2A59A3;
 }
 
+.elecard {
+  margin-bottom: 6%;
+}
+
 .climaIcon {
   height: 15vh;
   margin: 5%;
   padding-bottom: 5%;
 }
 
+.modal-body {
+  padding-left: 5%;
+  padding-right: 10%;
+}
+
 .modal-body .card-title {
   text-align: center;
   font-size: 20px;
+  margin-right: 23%;
 }
 
 .modal-body .climaIcon {
@@ -274,6 +228,7 @@ h6 {
 .modal-body .prev-info {
   margin-top: 5%;
   margin-bottom: 10%;
+  margin-left: 0% !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,7 +244,7 @@ h6 {
 
 .modal-body .tempoMm {
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -300,21 +255,32 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 0;
+  margin-left: 0 !important;
+  margin-right: 4%;
 }
 
 .tempSemana {
   text-align: center;
+  margin-left: 10%;
 }
 
 .climaSemana {
   height: 7vh;
-  margin-left: 20%;
 }
 
 .iconesUv {
   height: 15vh;
-  padding-top: 5%;
-  margin-left: 30% !important;
+  margin-right: 5%;
+}
+
+.icones {
+  height: 10vh;
+  margin-right: 5%;
+}
+
+.umid {
+  margin-left: 7%;
+  margin-right: 5%;
 }
 
 .heart {
@@ -328,18 +294,13 @@ h6 {
 .previsaoAPI {
   text-align: center;
   color: #2A59A3;
-  margin: 10% 18%;
-}
-
-.sidebarItens {
-  font-size: 20px;
-  padding-bottom: 5%;
-  bottom: 10;
+  margin: 10% 20% 10% 10%;
 }
 
 .UVFCTEXT {
   padding-top: 20%;
   font-size: 30px;
+  margin-left: 10%;
 }
 
 .medir {
@@ -368,35 +329,10 @@ h6 {
   top: 1px;
 }
 
-.bluetoothButton {
-  background-color: #29579f;
-  border-radius: 28px;
-  border: 1px solid #4e6096;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 17px;
-  font-weight: bold;
-  padding: 5px 15px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #283966;
-}
-
-.bluetoothButton:hover {
-  background-color: #7ba3d4;
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
-}
-
-.bluetoothButton:active {
-  position: relative;
-  top: 1px;
-}
-
 .botaoum {
-  margin-top: 10%;
-  margin-left: 20%;
+  margin-top: 5%;
+  margin-left: 22%;
   margin-right: 20%;
+  padding-right: 50%;
 }
 /*# sourceMappingURL=sass.css.map */
