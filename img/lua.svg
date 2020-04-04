@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 122 105.7" style="enable-background:new 0 0 122 105.7;" xml:space="preserve">
+	 viewBox="-418 228.3 122 105.7" style="enable-background:new -418 228.3 122 105.7;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#010202;stroke-width:2;stroke-miterlimit:10;}
+	.st0{fill:#A3A29F;stroke:#848484;stroke-miterlimit:10;}
 </style>
-<path id="XMLID_344_" class="st0" d="M69.3,78.8c-10.5-4.6-18.6-13.7-20.3-25C47,42.5,51.8,31.3,60.4,23.6c6-5.4,12.2-7.4,18.2-7.9
-	c0.2,0,0.2-0.2,0.1-0.3c-7.9-4.4-17.8-6.3-27.4-4.8C29,14,11.6,34.3,15.6,59.2l0,0c4.3,26.4,26.9,38.7,49,34.9
-	c9.6-1.6,18.1-6.5,24.2-13.2c0.1-0.1,0.1-0.3,0-0.3C83.1,82.1,76.7,82,69.3,78.8z"/>
 <g id="XMLID_159_">
 </g>
 <g id="XMLID_160_">
@@ -37,5 +34,10 @@
 <g id="XMLID_274_">
 </g>
 <g id="XMLID_275_">
+</g>
+<path id="XMLID_2_" class="st0" d="M-333.8,314.2c-13-5.7-23-16.9-25.1-30.9c-2.5-14,3.5-27.8,14.1-37.4c7.4-6.7,15.1-9.2,22.5-9.8
+	c0.2,0,0.2-0.2,0.1-0.4c-9.8-5.4-22-7.8-33.9-5.9c-27.6,4.2-49.1,29.3-44.2,60.1l0,0c5.3,32.7,33.3,47.9,60.6,43.2
+	c11.9-2,22.4-8,29.9-16.3c0.1-0.1,0.1-0.4,0-0.4C-316.8,318.3-324.7,318.2-333.8,314.2z"/>
+<g id="XMLID_1_">
 </g>
 </svg>
