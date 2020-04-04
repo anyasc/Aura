@@ -160,6 +160,7 @@ input:checked + .slider:before {
 .buttonGrid .medir {
   margin: 2%;
   text-align: left;
+  padding-top: 4%;
   background-color: #f4f4f4;
   border-width: 3px;
   border-color: #20437a;
@@ -172,12 +173,12 @@ input:checked + .slider:before {
 
 .buttonGrid .medir:hover {
   background-color: #ffb905;
-  color: #f4f4f4;
+  color: #202020;
 }
 
 .buttonGrid .medir:active {
   background-color: #ffb905;
-  color: #f4f4f4;
+  color: #202020;
   font-weight: bold;
 }
 
@@ -373,8 +374,9 @@ input:checked + .slider:before {
 }
 
 .prevWHole .climaSemana {
-  height: 7vh;
-  margin-top: 5%;
+  height: 6vh;
+  margin-top: 7%;
+  margin-bottom: 5%;
 }
 
 .prevWHole .card-title {
@@ -433,30 +435,31 @@ input:checked + .slider:before {
 .medir {
   background-color: #29579f;
   border-radius: 18px;
-  border: 1px solid #4e6096;
+  border: 1px solid #4e6096 !important;
   display: inline-block;
   cursor: pointer;
-  color: #ffffff;
+  color: #f4f4f4;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  font-weight: bold;
   padding: 5px 15px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #283966;
 }
 
 .medir:hover {
-  background-color: #ffb905;
-  color: #f4f4f4;
+  background-color: #ffb905 !important;
+  color: #202020 !important;
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
+  font-weight: bold;
+  border: 1px solid #4e6096 !important;
 }
 
 .medir:active {
   position: relative;
   top: 1px;
-  background-color: #ffb905;
-  color: #f4f4f4;
+  background-color: #ffb905 !important;
+  color: #202020 !important;
+  font-weight: bold;
 }
 
 .botaoum {
