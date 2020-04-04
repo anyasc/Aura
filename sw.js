@@ -1,9 +1,5 @@
 const cacheName = 'v1';
 
-const cacheAssets = [
-  'index.html'
-]
-
 // Install
 
 self.addEventListener('install', e => {

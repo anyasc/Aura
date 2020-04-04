@@ -166,3 +166,18 @@ function handleDisconnection(event) {
       then(characteristic => startNotifications(characteristic)).
       catch(error => log(error));
 }
+
+function sendData(data) {
+  data = String(data);
+  if (!data) {
+    console.log('Nenhum dado a ser enviado');
+    return;
+  }
+  else if (data.length > 20) {
+    console.log('Mensagem deve ser limitada a 20 bytes');
+    return;
+  }
+  // envia os dados para o device
+  characteristicCache.writeValue(new TextEncoder().encode(data));
+  console.log('Dados enviados: '+data)
+}
