@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aura</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="./sass.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div id="index">
+            <h1>Aura</h1>
+
+            <div class="hamburguer" id="hamburguer-index">
+                <a href="#">
+                    <spam><i class="fa fa-user-cog"></i></spam>
+                </a>
+            </div>
+
+            <div class="alert  alert-warning alert-dismissible fade show" style="padding-right: 10%;">
+                <h4 class="alert-heading"> Alerta </h4>
+                <img src="./img/alerta01.svg" class="iconeAlerta">
+                A umidade do ar está baixa. <strong>Evite a prática de atividades ao ar livre.</strong>.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tempo local</h5>
+                    <div class="row elecard">
+                        <div class="col-6 text-center">
+                            <img src="./img/temperatura.svg" alt='icone de temperatura' class="icones">
+                        </div>
+                        <div class="col-6 ">
+                            <p class="card-text UVFCTEXT"><span class="temperature">-</span>&degC</p>
+                        </div>
+                    </div>
+
+                    <div class="row elecard">
+                        <div class="col-6 text-center">
+                            <img src="./img/umidade.svg" alt='icone do UV' class="icones umid">
+                        </div>
+                        <div class="col-6 ">
+                            <p class="card-text UVFCTEXT"><span class="humidity">-</span>%</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <img src="./img/uv.svg" alt='icone do UV' class="iconesUv">
+                        </div>
+                        <div class="col-6 ">
+                            <p class="card-text UVFCTEXT"><span class="uv">-</span></p>
+                        </div>
+                    </div>
+
+                    <div class="botaoum col">
+                        <button class="medir"> Medir com Aura</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card" id="previsao" style="height: 75vw;">
+                <div class="card-body">
+                    <div class="container">
+                        <div class="row" style="margin-left: 0!important;">
+                            <h5 class="card-title prev-title col">Previsão do Tempo</h5>
+                        </div>
+                        <div class="row" style="margin-left: 0!important;">
+                            <h5 class="card-title prev-title cidade">São Paulo</h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-5 prev-icon" style="padding: 0%;">
+
+                                <img src="./img/lua_chuva.svg" alt='icone representando uma noite com chuva'
+                                    class="climaIcon">
+                            </div>
+                            <div class="col-6 prev-text">
+
+                                <p class="card-title prev-title" style="margin-top: 1%; margin-left: 10%; ">
+                                    Segunda-feira</p>
+                                <p class="prev-info"><strong>Máxima:</strong> 26&degC</p>
+                                <p class="prev-info"><strong>Mínima:</strong> 18&degC</p>
+                                <p class="prev-info"><strong>Chuva:</strong> 90%</p>
+                            </div>
+
+
+                            <!-- /////////////////////////////////////////////////// -->
+
+                        </div>
+                        <div class='row semana'>
+
+                            <div class="container-fluid">
+                                <div style='padding-left: 5%'>
+                                    <!-- Trigger the modal with a button -->
+                                    <button type="button" class="btn btn-info btn-lg medir previsaoAPI"
+                                        data-toggle="modal" style='background-color:#29579f ;'
+                                        data-target="#myModal">Previsão completa</button>
+                                </div>
+
+
+
+
+
+                                <!-- Modal ------------------------------------------------------------------------------------------>
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content prevWHole">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Previsão do Tempo</h4>
+                                                <button type="button" class=" close "
+                                                    data-dismiss="modal">&times;</button>
+
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container">
+
+
+                                                    <h5 class="card-title prev-title cidade" style="margin-right: 10%;">
+                                                        São Paulo</h5>
+                                                    <h5 class='dia' style="margin-right: 10%;">6 de abril, segunda-feira
+                                                    </h5>
+
+
+
+                                                    <div class="row">
+                                                        <div class="col prev-icon" style="padding-right: 80%;">
+                                                            <img src="./img/lua_chuva.svg"
+                                                                alt='icone representando uma noite com chuva'
+                                                                class="climaIcon">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+
+                                                        <p class="prev-info tempoMm" style="margin-left: 10%;">
+                                                            <strong>18</strong>&degC</p>
+
+                                                        <p class="prev-info tempoMm"><strong>/</strong></p>
+
+                                                        <p class="prev-info tempoMm"><strong>26</strong>&degC</p>
+
+                                                    </div>
+
+
+
+                                                    <div class="card" style="height: 10vh;">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <p class="prev-info"><strong class="chUV">Chuva:
+                                                                        </strong> 80%</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="prev-info"><strong class="chUV">UV:
+                                                                        </strong> Baixo</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <div class="card" style="height: 20vh;">
+                                                        <div class="card-body" style="padding-right: 5%;">
+                                                            <div class="row" style="padding-left: 0; margin-left: 0;">
+                                                                <div class="col-3"
+                                                                    style="padding-left: 0; margin-left: 0;">
+                                                                    <h6 class="tempSemana">
+                                                                        Dom
+                                                                    </h6>
+                                                                    <img src="./img/sol_chuva.svg"
+                                                                        alt='icone representando um dia com chuva'
+                                                                        style="padding-left: 15%;" class="climaSemana">
+                                                                    <p class="climaSemana tempSemana">17&degC 23&degC
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-3" style="padding-left: 02;">
+                                                                    <h6 class="tempSemana">
+                                                                        Seg
+                                                                    </h6>
+                                                                    <img src="./img/sol_nublado.svg"
+                                                                        alt='icone representando um dia nublado'
+                                                                        class="climaSemana">
+                                                                    <p class="climaSemana tempSemana">16&degC 20&degC
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-3">
+                                                                    <h6 class="tempSemana">
+                                                                        Ter
+                                                                    </h6>
+                                                                    <img src="./img/tempestade.svg"
+                                                                        alt='icone representando uma tempestade'
+                                                                        style=" padding-left: 0;" class="climaSemana">
+                                                                    <p class="climaSemana tempSemana">15&degC 20&degC
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-3">
+                                                                    <h6 class="tempSemana">
+                                                                        Qua
+                                                                    </h6>
+                                                                    <img src="./img/sol.svg"
+                                                                        alt='icone representando um dia com chuva'
+                                                                        class="climaSemana">
+                                                                    <p class="climaSemana tempSemana">17&degC 22&degC
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default chUV"
+                                                    data-dismiss="modal"><strong> Close </strong></button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="inactive" id="config">
+
+            <div class="hamburguer" id="hamburguer-config">
+                <a href='index.html' ><span> <i class="fas fa-home"></i> </span> </a>
+            </div>
+        
+            <h1 style="font-size: 30px!important; margin-top: 4%;"> Configurações </h1>
+    
+            
+                    <div class="row buttonGrid">
+                        <div class="col-5">
+                    <p id="connect-bt" class="medir" style=" padding-top: 6%; padding-right: 20%;"> 
+                        <i style="float:left!important; font-size: 25px; margin-right: 40px;" class="fab fa-bluetooth-b"></i> <span class="text">Conectar</span></p>
+                        </div> 
+                    </div>
+                    <div class="row buttonGrid">
+                        <div class="col-5">
+                    <button type="button" class="btn btn-info btn-lg medir" data-toggle="modal" data-target="#myModal9">
+                         <span ><i style="float:left!important; margin-right: 35px; padding-top: 1%;" class="fas fa-history"></i></span> Histórico</button>
+                        </div>
+                    
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal9" role="dialog">
+                            <div class="modal-dialog modal-sm modal-dialog-centered">
+                            
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Histórico</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body" style="padding-right: 5%;">
+    
+    
+                                    <h6 class='cidade'>Ontem</h6>
+    
+                            <div class="row"> 
+                                <div  class="col-4" >
+                                <h6 class="tempSemana">
+                                    Manhã
+                                </h6>
+                                <img src="./img/sol.svg" alt='icone representando um dia de sol' class="climaSemana historico">   
+                                <p class="climaSemana tempSemana">16&degC / 17&degC</p> 
+                                </div>
+                                <div  class="col-4">
+                                <h6 class="tempSemana">
+                                    Tarde
+                                </h6>
+                                <img src="./img/sol_chuva.svg"   alt='icone representando uma Lua' class="climaSemana historico"> 
+                                <p class="climaSemana tempSemana">20&degC / 22&degC</p> 
+                                </div>
+                                <div  class="col-4">
+                                <h6 class="tempSemana">
+                                    Noite
+                                </h6>
+                                <img src="./img/lua.svg" alt='icone representando uma Lua' class="climaSemana historicoLua"> 
+                                <p class="climaSemana tempSemana">15&degC / 18&degC</p> 
+                                </div>
+    
+                            </div>
+    
+                            <div class="row">
+                                <div class="col-6">
+                            <p class="prev-info" ><strong class="chUV">Preciptação: </strong>  80%</p>
+                                </div>
+                                <div class="col-6">
+                            <p class="prev-info" ><strong class="chUV">UV Geral: </strong>  Baixo</p>   
+                                </div>
+                            </div>
+    
+                                </div>
+    
+                            </div>
+                            </div>
+                        </div> 
+                    </div>
+               <div>
+                   <p class="subtitle">Alertas</p>
+               </div>
+         
+                        <div class="row buttonGrid" style="margin-bottom: 0;">
+                            <div class="col-5"style="margin-bottom: 0;">
+                        <button type="button" class=" medir" style=" margin-right: 35px; padding-top: 7%; border-radius: 18px 18px 0 0; margin-bottom: 0; border-bottom: 0.5;"> <span ><i style="float:left!important; margin-right: 35px; padding-top: 1%!important;" class="fas fa-exclamation-triangle"></i>
+                        </span> Alta temperatura <span style="float:right!important;">
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                              </label>
+                        </span></button>
+                            </div>  
+                        </div>
+                        <div class="row buttonGrid" style="margin-top: 0; margin-bottom: 0;">
+                            <div class="col-5" style="margin-top: 0; margin-bottom: 0;">
+                        <button type="button" class=" medir" style=" margin-right: 35px; border-radius: 0; margin-top:0;border-top: 0; margin-bottom: 0; border-bottom: 0.5; padding-top: 7%;" > <span ><i style="float:left!important;  margin-right: 35px; margin-top: 1%;" class="fas fa-exclamation-triangle"></i>
+                        </span> Baixa temperatura <span  style="float:right!important;">
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                              </label>
+                        </span></button>
+                            </div>  
+                        </div>   
+                        <div class="row buttonGrid" style="margin-top: 0; margin-bottom: 0;">
+                            <div class="col-5" style="margin-top: 0; margin-bottom: 0;">
+                        <button type="button" class=" medir" style=" margin-right: 35px; border-radius: 0; margin-top:0;border-top: 0; margin-bottom: 0; border-bottom: 0.5; padding-top: 6%;"> <span ><i style="float:left!important;  margin-right: 35px; margin-top: 1%;" class="fas fa-exclamation-triangle"></i>
+                        </span> tempo seco <span  style="float:right!important;">
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                              </label>
+                        </span></button>
+                            </div>  
+                        </div>   
+                        <div class="row buttonGrid" style="margin-top: 0; margin-bottom: 0;">
+                            <div class="col-5" style="margin-top: 0; margin-bottom: 0;">
+                        <button type="button" class=" medir" style=" margin-right: 35px; border-radius: 0; margin-top:0;border-top: 0; margin-bottom: 0; border-bottom: 0.5; padding-top: 6%;"> <span ><i style="float:left!important;  margin-right: 35px; margin-top: 1%;" class="fas fa-exclamation-triangle"></i>
+                        </span> tempo umido <span  style="float:right!important;">
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                              </label>
+                        </span></button>
+                            </div>  
+                        </div> 
+                        <div class="row buttonGrid" style="margin-top: 0;">
+                            <div class="col-5" style="margin-top: 0;">
+                        <button type="button" class=" medir" style=" margin-right: 35px; border-radius: 0 0 18px 18px; margin-top:0;border-top: 0; padding-top: 6%;"> <span > <i style="float:left!important;  margin-right: 35px; margin-top: 1%;" class="fas fa-glass-whiskey"></i>
+                        </span> Beber água <span style="float:right!important;">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                        </span></button>
+                            </div>  
+                        </div>
+    
+    
+                        <div>
+                            <p class="subtitle">Desativar/Ativar pulseira</p>
+                        </div>
+    
+                        <div class="row buttonGrid" >
+                            <div class="col-5" >
+                        <button type="button" class=" medir" style=" margin-right: 35px; padding-top: 8%;"> <span ><i style="float:left!important;  margin-right: 35px; margin-top: 1%;" class="fas fa-cloud"></i>
+                        </span>Aura <span  style="float:right!important;">
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                              </label>
+                        </span></button>
+                            </div>  
+                        </div>  
+                        
+                        <div class="row buttonGrid">
+                            <div class="col-5">
+                        <button type="button" class="btn btn-info btn-lg medir " data-toggle="modal" data-target="#myModal2" style=" margin-right: 36px; margin-left: 3%;" >
+                             <span ><i style="float:left!important; margin-right: 36px; margin-top:1%; margin-left: 3%;" class="fas fa-info"></i></span> Sobre </button>
+                            </div>
+                        
+     
+                            
+    
+                            <div class="modal fade" id="myModal2" role="dialog">
+                                <div class="modal-dialog modal-sm modal-dialog-centered">
+                                
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Sobre</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                    <p>Aura is a project created to help people dwell better with sudden climate changes and well as prepare oneself for different weather circumstances and know it with precision due to the sensors present in the bracelet.<br><br>
+                                        Note that aura is a prototype still under development, by using it you agree and acknowledge that the app is subjected to possible changes and new features, as well as termination of current ones.
+                                    </p>
+                                    </div>
+    
+    
+                                </div>
+                                </div>    
+                            </div>
+                                
+                        </div>
+    
+        </div>
+    </div>
+
+
+    <script src="./script/app.js"></script>
+    <script src="./script/bluetooth.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

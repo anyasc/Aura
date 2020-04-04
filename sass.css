@@ -468,4 +468,8 @@ input:checked + .slider:before {
   margin-right: 20%;
   padding-right: 50%;
 }
+
+.inactive {
+  display: none;
+}
 /*# sourceMappingURL=sass.css.map */

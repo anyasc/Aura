@@ -11,13 +11,20 @@ if ('serviceWorker' in navigator) {
 
 
 // Hamburguer
-const hamburguer = document.querySelector(".hamburguer");
-const sidebar = document.querySelector("#sidebar");
-const sideClose = document.querySelector(".side-close");
+const index = document.querySelector("#index")
+const config = document.querySelector("#config")
+
+const hamburguerIndex = document.querySelector("#hamburguer-index");
+const hamburguerConfig = document.querySelector("#hamburguer-config");
 
 
-hamburguer.addEventListener('click', sidebarToggle)
-sideClose.addEventListener('click', sidebarToggle)
+hamburguerIndex.addEventListener('click', openConfig)
+hamburguerConfig.addEventListener('click', openConfig)
+
+function openConfig() {
+  index.classList.toggle('inactive');
+  config.classList.toggle('inactive');
+}
 
 function sidebarToggle() {
   sidebar.classList.toggle('active');
