@@ -84,7 +84,7 @@
                             <h5 class="card-title prev-title col">Previsão do Tempo</h5>
                         </div>
                         <div class="row" style="margin-left: 0!important;">
-                            <h5 class="card-title prev-title cidade" onclick="updateAPI()">São Paulo</h5>
+                            <h5 class="card-title prev-title cidade">São Paulo</h5>
                         </div>
                         <div class="row">
                             <div class="col-5 prev-icon" style="padding: 0%;">
@@ -154,11 +154,11 @@
                                                     <div class="row">
 
                                                         <p class="prev-info tempoMm" style="margin-left: 10%;">
-                                                            <strong>18</strong>&degC</p>
+                                                            <strong><span id="compTempMin"></span></strong>&degC</p>
 
                                                         <p class="prev-info tempoMm"><strong>/</strong></p>
 
-                                                        <p class="prev-info tempoMm"><strong>26</strong>&degC</p>
+                                                        <p class="prev-info tempoMm"><strong><span id="compTempMax"></span></strong>&degC</p>
 
                                                     </div>
 
@@ -169,7 +169,7 @@
                                                             <div class="row">
                                                                 <div class="col-6">
                                                                     <p class="prev-info"><strong class="chUV">Chuva:
-                                                                        </strong> 80%</p>
+                                                                        </strong><span id="compChuva"></span>%</p>
                                                                 </div>
                                                                 <div class="col-6">
                                                                     <p class="prev-info"><strong class="chUV">UV:
@@ -192,7 +192,7 @@
                                                                     <img src="./img/sol_chuva.svg"
                                                                         alt='icone representando um dia com chuva'
                                                                         style="padding-left: 15%;" class="climaSemana">
-                                                                    <p class="climaSemana tempSemana">17&degC 23&degC
+                                                                    <p class="climaSemana tempSemana"><span id="amanhaTempMin"></span>&degC <span id="amanhaTempMax"></span>&degC
                                                                     </p>
                                                                 </div>
                                                                 <div class="col-3" style="padding-left: 02;">
@@ -202,7 +202,8 @@
                                                                     <img src="./img/sol_nublado.svg"
                                                                         alt='icone representando um dia nublado'
                                                                         class="climaSemana">
-                                                                    <p class="climaSemana tempSemana">16&degC 20&degC
+                                                                    <p class="climaSemana tempSemana"><span id="daTempMin"></span>&degC <span id="daTempMax"></span>&degC
+                                                                    
                                                                     </p>
                                                                 </div>
                                                                 <div class="col-3">
@@ -212,7 +213,7 @@
                                                                     <img src="./img/tempestade.svg"
                                                                         alt='icone representando uma tempestade'
                                                                         style=" padding-left: 0;" class="climaSemana">
-                                                                    <p class="climaSemana tempSemana">15&degC 20&degC
+                                                                    <p class="climaSemana tempSemana"><span id="ddaTempMin"></span>&degC <span id="ddaTempMax"></span>&degC
                                                                     </p>
                                                                 </div>
                                                                 <div class="col-3">
@@ -222,7 +223,7 @@
                                                                     <img src="./img/sol.svg"
                                                                         alt='icone representando um dia com chuva'
                                                                         class="climaSemana">
-                                                                    <p class="climaSemana tempSemana">17&degC 22&degC
+                                                                    <p class="climaSemana tempSemana"><span id="dddaTempMin"></span>&degC <span id="dddaTempMax"></span>&degC
                                                                     </p>
                                                                 </div>
                                                             </div>

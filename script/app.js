@@ -13,6 +13,7 @@ window.addEventListener("load", function() {
   document.querySelector("#da").innerText = semanaAbr[today.getDay()+2]
   document.querySelector("#dda").innerText = semanaAbr[today.getDay()+3]
   document.querySelector("#ddda").innerText = semanaAbr[today.getDay()+4]
+  updateAPI();
 });
 
 
@@ -43,11 +44,34 @@ function openConfig() {
 
 // API
 const darksky = "https://api.darksky.net/forecast/9d783ced70007d510216381c3579ba6a/-23.5489,-46.6388?lang=pt&units=si&exclude=minutely,hourly,flags"
+const proxy = "https://cors-anywhere.herokuapp.com/"
+
+const previsao = document.querySelector("#previsao");
 
 function updateAPI() {
-  fetch(darksky, {method:"GET", mode: "no-cors"})
-    .then(function(data) {
-      tempMax.innerText = data.daily[0].temperatureHigh;
-      tempMin.innerText = data.daily[0].temperatureLow;
+  fetch(proxy+darksky)
+    .then(res => {
+      return res.json()}
+      )
+    .then(data => {
+      document.querySelector("#tempMax").innerText = Math.round(data.daily.data[0].temperatureHigh);
+      document.querySelector("#tempMin").innerText = Math.round(data.daily.data[0].temperatureLow);
+      document.querySelector("#chuva").innerText = data.daily.data[0].precipProbability*100;
+
+      document.querySelector("#compTempMax").innerText = Math.round(data.daily.data[0].temperatureHigh);
+      document.querySelector("#compTempMin").innerText = Math.round(data.daily.data[0].temperatureLow);
+      document.querySelector("#compChuva").innerText = data.daily.data[0].precipProbability*100;
+
+      document.querySelector("#amanhaTempMax").innerText = Math.round(data.daily.data[1].temperatureHigh);
+      document.querySelector("#amanhaTempMin").innerText = Math.round(data.daily.data[1].temperatureLow);
+      
+      document.querySelector("#daTempMax").innerText = Math.round(data.daily.data[1].temperatureHigh);
+      document.querySelector("#daTempMin").innerText = Math.round(data.daily.data[1].temperatureLow);
+
+      document.querySelector("#ddaTempMax").innerText = Math.round(data.daily.data[1].temperatureHigh);
+      document.querySelector("#ddaTempMin").innerText = Math.round(data.daily.data[1].temperatureLow);
+
+      document.querySelector("#dddaTempMax").innerText = Math.round(data.daily.data[1].temperatureHigh);
+      document.querySelector("#dddaTempMin").innerText = Math.round(data.daily.data[1].temperatureLow);
     })
 }

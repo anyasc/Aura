@@ -116,15 +116,28 @@ function evaluateData(data) {
   if (info[0].toUpperCase() === 'TEMP') {
     // update_temperature(info[1]);
     let temperature = document.querySelector('span.temperature');
-    temperature.textContent = info[1];
+    temperature.textContent = Math.round(Number(info[1]));
   } else if (info[0].toUpperCase() === 'UMID') {
     // update_umidade
     let umidade = document.querySelector('span.humidity');
-    umidade.textContent = info[1];
+    umidade.textContent = Math.round(Number(info[1]));
   } else if (info[0].toUpperCase() === 'UV') {
     // update_uv
+    let uvIndex = Number(info[1]);
+    let uvString = "";
+    if (uvIndex >= 11) {
+      uvString = "Extremo"
+    } else if (uvIndex >= 8) {
+      uvString = "Muito alto"
+    } else if (uvIndex >= 6) {
+      uvString = "Alto"
+    } else if (uvIndex >= 3) {
+      uvString = "Moderado"
+    } else {
+      uvString = "Baixo"
+    } 
     let uv = document.querySelector('span.uv');
-    uv.textContent = info[1];
+    uv.textContent = uvString;
   }
 }
 
