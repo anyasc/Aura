@@ -145,7 +145,7 @@ function evaluateData(data) {
     let uv = document.querySelector('span.uv');
     uv.textContent = uvString;
   } else if (info[0].toUpperCase() === "ALERT") {
-    showAlert(info);
+    createAlert(info[1], info[2]);
   }
 }
 
@@ -214,6 +214,7 @@ function createAlert(num, categoria) {
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
-    </div>`
+    </div>
+  `;
   document.querySelector("#alert-div").appendChild(alert);
 }
