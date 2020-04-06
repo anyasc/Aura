@@ -342,7 +342,7 @@
                                 class="fas fa-exclamation-triangle"></i>
                         </span> Alta temperatura <span style="float:right!important;">
                             <label class="switch">
-                                <input type="checkbox" checked>
+                                <input type="checkbox" id="tempAltaCheck">
                                 <span class="slider round"></span>
                             </label>
                         </span></button>
@@ -356,7 +356,7 @@
                                 class="fas fa-exclamation-triangle"></i>
                         </span> Baixa temperatura <span style="float:right!important;">
                             <label class="switch">
-                                <input type="checkbox" checked>
+                                <input type="checkbox" id="tempBaixaCheck">
                                 <span class="slider round"></span>
                             </label>
                         </span></button>
@@ -370,7 +370,7 @@
                                 class="fas fa-exclamation-triangle"></i>
                         </span> tempo seco <span style="float:right!important;">
                             <label class="switch">
-                                <input type="checkbox" checked>
+                                <input type="checkbox" id="secoCheck">
                                 <span class="slider round"></span>
                             </label>
                         </span></button>
@@ -384,7 +384,7 @@
                                 class="fas fa-exclamation-triangle"></i>
                         </span> tempo umido <span style="float:right!important;">
                             <label class="switch">
-                                <input type="checkbox" checked>
+                                <input type="checkbox" id="umidoCheck">
                                 <span class="slider round"></span>
                             </label>
                         </span></button>
@@ -398,7 +398,7 @@
                                 class="fas fa-glass-whiskey"></i>
                         </span> Beber água <span style="float:right!important;">
                             <label class="switch">
-                                <input type="checkbox">
+                                <input type="checkbox" id="aguaCheck">
                                 <span class="slider round"></span>
                             </label>
                         </span></button>
@@ -417,7 +417,7 @@
                                 class="fas fa-cloud"></i>
                         </span>Aura <span style="float:right!important;">
                             <label class="switch">
-                                <input type="checkbox" checked>
+                                <input type="checkbox" id="pulseiraCheck" checked>
                                 <span class="slider round"></span>
                             </label>
                         </span></button>
@@ -464,11 +464,11 @@
     </div>
     </div>
 
-
     <script src="./script/app.js"></script>
     <script src="./script/bluetooth.js"></script>
-
-
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
