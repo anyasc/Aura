@@ -1,5 +1,11 @@
 // WebBluetooth
 
+const updateBtn = document.querySelector("#update-btn");
+updateBtn.addEventListener("click", e => {
+  e.preventDefault();
+  sendData("u")
+})
+ 
 // Storing Device and Characteristics info
 let deviceCache = null;
 let characteristicCache = null;
@@ -138,6 +144,8 @@ function evaluateData(data) {
     } 
     let uv = document.querySelector('span.uv');
     uv.textContent = uvString;
+  } else if (info[0].toUpperCase() === "ALERT") {
+    showAlert(info);
   }
 }
 
@@ -193,4 +201,19 @@ function sendData(data) {
   // envia os dados para o device
   characteristicCache.writeValue(new TextEncoder().encode(data));
   console.log('Dados enviados: '+data)
+}
+
+
+function createAlert(num, categoria) {
+  let alert = document.createElement("div");
+  alert.innerHTML = `
+    <div class="alert  alert-${categoria} alert-dismissible fade show" style="padding-right: 10%;">
+      <h4 class="alert-heading"> Alerta ${num}</h4>
+      <img src="./img/alerta01.svg" class="iconeAlerta">
+      A umidade do ar está baixa. <strong>Evite a prática de atividades ao ar livre.</strong>.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>`
+  document.querySelector("#alert-div").appendChild(alert);
 }

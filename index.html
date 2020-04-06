@@ -28,15 +28,16 @@
                     <span><i class="fa fa-user-cog"></i></span>
                 </a>
             </div>
-
-            <div class="alert  alert-warning alert-dismissible fade show" style="padding-right: 10%;">
+            
+            <div id="alert-div"></div>
+            <!-- <div class="alert  alert-warning alert-dismissible fade show" style="padding-right: 10%;">
                 <h4 class="alert-heading"> Alerta </h4>
                 <img src="./img/alerta01.svg" class="iconeAlerta">
                 A umidade do ar está baixa. <strong>Evite a prática de atividades ao ar livre.</strong>.
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-            </div>
+            </div> -->
 
 
             <div class="card">
@@ -70,7 +71,7 @@
                     </div>
 
                     <div class="botaoum col">
-                        <button class="medir"> Medir com Aura</button>
+                        <button class="medir" id="update-btn">Medir com Aura</button>
                     </div>
                 </div>
             </div>
@@ -158,7 +159,8 @@
 
                                                         <p class="prev-info tempoMm"><strong>/</strong></p>
 
-                                                        <p class="prev-info tempoMm"><strong><span id="compTempMax"></span></strong>&degC</p>
+                                                        <p class="prev-info tempoMm"><strong><span
+                                                                    id="compTempMax"></span></strong>&degC</p>
 
                                                     </div>
 
@@ -192,7 +194,9 @@
                                                                     <img src="./img/sol_chuva.svg"
                                                                         alt='icone representando um dia com chuva'
                                                                         style="padding-left: 15%;" class="climaSemana">
-                                                                    <p class="climaSemana tempSemana"><span id="amanhaTempMin"></span>&degC <span id="amanhaTempMax"></span>&degC
+                                                                    <p class="climaSemana tempSemana"><span
+                                                                            id="amanhaTempMin"></span>&degC <span
+                                                                            id="amanhaTempMax"></span>&degC
                                                                     </p>
                                                                 </div>
                                                                 <div class="col-3" style="padding-left: 02;">
@@ -202,8 +206,10 @@
                                                                     <img src="./img/sol_nublado.svg"
                                                                         alt='icone representando um dia nublado'
                                                                         class="climaSemana">
-                                                                    <p class="climaSemana tempSemana"><span id="daTempMin"></span>&degC <span id="daTempMax"></span>&degC
-                                                                    
+                                                                    <p class="climaSemana tempSemana"><span
+                                                                            id="daTempMin"></span>&degC <span
+                                                                            id="daTempMax"></span>&degC
+
                                                                     </p>
                                                                 </div>
                                                                 <div class="col-3">
@@ -213,7 +219,9 @@
                                                                     <img src="./img/tempestade.svg"
                                                                         alt='icone representando uma tempestade'
                                                                         style=" padding-left: 0;" class="climaSemana">
-                                                                    <p class="climaSemana tempSemana"><span id="ddaTempMin"></span>&degC <span id="ddaTempMax"></span>&degC
+                                                                    <p class="climaSemana tempSemana"><span
+                                                                            id="ddaTempMin"></span>&degC <span
+                                                                            id="ddaTempMax"></span>&degC
                                                                     </p>
                                                                 </div>
                                                                 <div class="col-3">
@@ -223,7 +231,9 @@
                                                                     <img src="./img/sol.svg"
                                                                         alt='icone representando um dia com chuva'
                                                                         class="climaSemana">
-                                                                    <p class="climaSemana tempSemana"><span id="dddaTempMin"></span>&degC <span id="dddaTempMax"></span>&degC
+                                                                    <p class="climaSemana tempSemana"><span
+                                                                            id="dddaTempMin"></span>&degC <span
+                                                                            id="dddaTempMax"></span>&degC
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -466,8 +476,8 @@
 
     <script src="./script/app.js"></script>
     <script src="./script/bluetooth.js"></script>
-    
-    
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
