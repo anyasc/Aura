@@ -84,7 +84,7 @@
                             <h5 class="card-title prev-title col">Previsão do Tempo</h5>
                         </div>
                         <div class="row" style="margin-left: 0!important;">
-                            <h5 class="card-title prev-title cidade">São Paulo</h5>
+                            <h5 class="card-title prev-title cidade" onclick="updateAPI()">São Paulo</h5>
                         </div>
                         <div class="row">
                             <div class="col-5 prev-icon" style="padding: 0%;">
@@ -94,11 +94,11 @@
                             </div>
                             <div class="col-6 prev-text">
 
-                                <p class="card-title prev-title" style="margin-top: 1%; margin-left: 10%; ">
-                                    Segunda-feira</p>
-                                <p class="prev-info"><strong>Máxima:</strong> 26&degC</p>
-                                <p class="prev-info"><strong>Mínima:</strong> 18&degC</p>
-                                <p class="prev-info"><strong>Chuva:</strong> 90%</p>
+                                <p class="card-title prev-title" style="margin-top: 1%; margin-left: 10%; " id="hoje">
+                                    ?</p>
+                                <p class="prev-info"><strong>Máxima:</strong><span id="tempMax">-</span>&degC</p>
+                                <p class="prev-info"><strong>Mínima:</strong><span id="tempMin">-</span>&degC</p>
+                                <p class="prev-info"><strong>Chuva:</strong><span id="chuva">-</span>%</p>
                             </div>
 
 
@@ -137,7 +137,8 @@
 
                                                     <h5 class="card-title prev-title cidade" style="margin-right: 10%;">
                                                         São Paulo</h5>
-                                                    <h5 class='dia' style="margin-right: 10%;">6 de abril, segunda-feira
+                                                    <h5 class='dia' style="margin-right: 10%;">
+                                                        <span id="diacompleto"></span>
                                                     </h5>
 
 
@@ -186,7 +187,7 @@
                                                                 <div class="col-3"
                                                                     style="padding-left: 0; margin-left: 0;">
                                                                     <h6 class="tempSemana">
-                                                                        Dom
+                                                                        <span id="amanha"></span>
                                                                     </h6>
                                                                     <img src="./img/sol_chuva.svg"
                                                                         alt='icone representando um dia com chuva'
@@ -196,7 +197,7 @@
                                                                 </div>
                                                                 <div class="col-3" style="padding-left: 02;">
                                                                     <h6 class="tempSemana">
-                                                                        Seg
+                                                                        <span id="da"></span>
                                                                     </h6>
                                                                     <img src="./img/sol_nublado.svg"
                                                                         alt='icone representando um dia nublado'
@@ -206,7 +207,7 @@
                                                                 </div>
                                                                 <div class="col-3">
                                                                     <h6 class="tempSemana">
-                                                                        Ter
+                                                                        <span id="dda"></span>
                                                                     </h6>
                                                                     <img src="./img/tempestade.svg"
                                                                         alt='icone representando uma tempestade'
@@ -216,7 +217,7 @@
                                                                 </div>
                                                                 <div class="col-3">
                                                                     <h6 class="tempSemana">
-                                                                        Qua
+                                                                        <span id="ddda"></span>
                                                                     </h6>
                                                                     <img src="./img/sol.svg"
                                                                         alt='icone representando um dia com chuva'
