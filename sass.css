@@ -219,11 +219,6 @@ input:checked + .slider:before {
   border-color: #600735;
 }
 
-.buttonGrid .bluetoothDisable .modal-content {
-  margin-left: 2%;
-  width: 100% !important;
-}
-
 #content {
   max-width: 95vw;
   padding: 2vw;
@@ -300,6 +295,7 @@ input:checked + .slider:before {
 }
 
 .modal-body .climaIcon {
+  margin-left: 3vw;
   margin-bottom: 0;
   height: 20vh;
   padding: 0;
@@ -349,15 +345,6 @@ input:checked + .slider:before {
   margin: 0 0 0 5vw;
 }
 
-.prevWHole .historicoLua {
-  margin-left: 30%;
-  width: 12vw;
-}
-
-.prevWHole .historico {
-  margin-left: 20%;
-}
-
 .prevWHole .tempSemana {
   text-align: center;
   margin-left: 10%;
@@ -374,15 +361,6 @@ input:checked + .slider:before {
 .prevWHole .card-title {
   margin-bottom: 5%;
   margin-left: 10%;
-}
-
-.historicoLua {
-  margin-left: 30%;
-  width: 12vw;
-}
-
-.historico {
-  margin-left: 20%;
 }
 
 .tempSemana {

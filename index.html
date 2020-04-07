@@ -97,9 +97,9 @@
 
                                 <p class="card-title prev-title" style="margin-top: 1%; margin-left: 5vw; " id="hoje">
                                     ?</p>
-                                <p class="prev-info tempHome"><strong>Máxima:</strong><span id="tempMax">-</span>&degC</p>
-                                <p class="prev-info tempHome"><strong>Mínima:</strong><span id="tempMin">-</span>&degC</p>
-                                <p class="prev-info tempHome"><strong>Chuva:</strong><span id="chuva">-</span>%</p>
+                                <p class="prev-info tempHome"><strong>Máxima: </strong><span id="tempMax">-</span>&degC</p>
+                                <p class="prev-info tempHome"><strong>Mínima: </strong><span id="tempMin">-</span>&degC</p>
+                                <p class="prev-info tempHome"><strong>Chuva: </strong><span id="chuva">-</span>%</p>
                             </div>
 
 
@@ -265,6 +265,12 @@
                 </div>
             </div>
         </div>
+
+
+
+<!-- //////////////////////////        //   configuraçoes   //        ////////////////////////// -->
+
+
         <nav class="inactive" id="config">
 
             <div class="hamburguer" id="hamburguer-config">
@@ -276,76 +282,15 @@
 
             <div class="row buttonGrid">
                 <div class="col-5">
-                    <p id="connect-bt" class="medir" style=" padding-top: 6%; padding-right: 20%;">
+                    <p id="connect-bt" class="medir" style=" padding-top: 1.4vh; padding-right: 20%;">
                         <i style="float:left!important; font-size: 25px; margin-right: 40px;"
                             class="fab fa-bluetooth-b"></i> <span class="text">Conectar</span></p>
                 </div>
             </div>
-            <div class="row buttonGrid">
-                <div class="col-5">
-                    <button type="button" class="btn btn-info btn-lg medir" data-toggle="modal" data-target="#myModal9">
-                        <span><i style="float:left!important; margin-right: 35px; padding-top: 1%;"
-                                class="fas fa-history"></i></span> Histórico</button>
-                </div>
-
-                <!-- Modal -->
-                <div class="modal fade" id="myModal9" role="dialog">
-                    <div class="modal-dialog modal-sm modal-dialog-centered">
-
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Histórico</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            </div>
-                            <div class="modal-body" style="padding-right: 5%;">
 
 
-                                <h6 class='cidade'>Ontem</h6>
 
-                                <div class="row">
-                                    <div class="col-4">
-                                        <h6 class="tempSemana">
-                                            Manhã
-                                        </h6>
-                                        <img src="./img/sol.svg" alt='icone representando um dia de sol'
-                                            class="climaSemana historico">
-                                        <p class="climaSemana tempSemana">16&degC / 17&degC</p>
-                                    </div>
-                                    <div class="col-4">
-                                        <h6 class="tempSemana">
-                                            Tarde
-                                        </h6>
-                                        <img src="./img/sol_chuva.svg" alt='icone representando uma Lua'
-                                            class="climaSemana historico">
-                                        <p class="climaSemana tempSemana">20&degC / 22&degC</p>
-                                    </div>
-                                    <div class="col-4">
-                                        <h6 class="tempSemana">
-                                            Noite
-                                        </h6>
-                                        <img src="./img/lua.svg" alt='icone representando uma Lua'
-                                            class="climaSemana historicoLua">
-                                        <p class="climaSemana tempSemana">15&degC / 18&degC</p>
-                                    </div>
-
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-6">
-                                        <p class="prev-info"><strong class="chUV">Preciptação: </strong> 80%</p>
-                                    </div>
-                                    <div class="col-6">
-                                        <p class="prev-info"><strong class="chUV">UV Geral: </strong> Baixo</p>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <div>
                 <p class="subtitle">Alertas</p>
             </div>
@@ -353,7 +298,7 @@
             <div class="row buttonGrid" style="margin-bottom: 0;">
                 <div class="col-5" style="margin-bottom: 0;">
                     <button type="button" class=" medir"
-                        style=" margin-right: 35px; padding-top: 7%; border-radius: 18px 18px 0 0; margin-bottom: 0; border-bottom: 0.5;">
+                        style=" margin-right: 35px; padding-top: 1.5vh; border-radius: 18px 18px 0 0; margin-bottom: 0; border-bottom: 0.5;">
                         <span><i style="float:left!important; margin-right: 35px; padding-top: 1%!important;"
                                 class="fas fa-exclamation-triangle"></i>
                         </span> Alta temperatura <span style="float:right!important;">
