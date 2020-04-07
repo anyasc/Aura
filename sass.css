@@ -1,0 +1,449 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+.close {
+  font-size: 35px;
+}
+
+body {
+  background-color: #2A59A3;
+  height: auto;
+  width: 100vw;
+  padding: 1% !important;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px 0 30px 0;
+  color: #f3ecf0;
+  margin-top: 2vw;
+}
+
+h6 {
+  font-weight: bold;
+  padding-top: 5%;
+  text-align: center;
+}
+
+.logoBranco {
+  width: 120px !important;
+  height: auto;
+  font-size: 12px;
+  margin-left: 30%;
+  margin-right: 40%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.iconeAlerta {
+  padding-left: 5%;
+  width: 20vw;
+  float: right;
+  z-index: 0;
+  opacity: 20%;
+}
+
+.card {
+  border-color: #7c7c7c;
+  border-width: 2px;
+  width: 100%;
+  height: auto;
+  border-radius: 3%;
+  margin-bottom: 10%;
+}
+
+.card .modal-content {
+  margin-top: 5%;
+}
+
+.modal-backdrop {
+  height: 120vh;
+  width: 100%;
+}
+
+.alert {
+  margin: 5px;
+  margin-bottom: 10%;
+  border-color: #ffb905;
+}
+
+.alert1 {
+  background-color: #84cfa6;
+  color: #335f3a;
+  margin: 5px;
+  margin-bottom: 10%;
+  border-color: #5fc18b;
+}
+
+.alert2 {
+  background-color: #eeb7be;
+  color: #742828;
+  margin: 5px;
+  margin-bottom: 10%;
+  border-color: #841919;
+}
+
+.subtitle {
+  color: #f4f4f4;
+  margin-bottom: 1px;
+  margin-left: 2%;
+  font-size: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 23px;
+  margin-top: 10%;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #999999;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .3;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 50%;
+  border-width: 4px;
+  border-color: black;
+}
+
+input:checked + .slider {
+  background-color: #2A59A3;
+  width: 45px;
+  height: 23px;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 5px #2196F3;
+          box-shadow: 0 0 5px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+  left: -2px;
+}
+
+.buttonGrid .medir {
+  margin: 2%;
+  text-align: left;
+  padding-top: 4%;
+  background-color: #f4f4f4;
+  border-width: 3px;
+  border-color: #20437a;
+  height: 50px;
+  width: 90vw;
+  color: #212529 !important;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.buttonGrid .medir:hover {
+  background-color: #ffb905;
+  color: #202020;
+}
+
+.buttonGrid .medir:active {
+  background-color: #ffb905;
+  color: #202020;
+  font-weight: bold;
+}
+
+.buttonGrid .col-5 {
+  margin-bottom: 3%;
+  padding-top: 0;
+  padding-left: 3%;
+}
+
+.buttonGrid .bluetoothDisable {
+  margin: 2%;
+  text-align: center;
+  height: 50px;
+  width: 360px;
+  background-color: #a70b5c;
+  border-width: 5px;
+  border-color: #600735;
+  color: #f4f4f4;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 28px;
+  cursor: pointer;
+}
+
+.buttonGrid .bluetoothDisable:hover {
+  background-color: #254e8f;
+  color: #f4f4f4;
+  font-weight: bold;
+  border-width: 5px;
+  border-color: #600735;
+}
+
+.buttonGrid .bluetoothDisable:active {
+  background-color: #254e8f;
+  color: #f4f4f4;
+  font-weight: bold;
+  border-width: 5px;
+  border-color: #600735;
+}
+
+#content {
+  max-width: 95vw;
+  padding: 2vw;
+}
+
+.hamburguer {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  color: #fff8f8;
+  font-size: 30px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.hamburguer.active {
+  display: none;
+}
+
+.card-body {
+  padding: 10px 10px 5px 10px;
+}
+
+.card-body .prev-title {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.card-body .row {
+  margin-left: 5%;
+}
+
+.card-icon {
+  font-size: 50px;
+}
+
+.prev-icon {
+  font-size: 70px;
+  padding: 15px 15px 0 15px;
+}
+
+.cidade {
+  margin-bottom: 5%;
+  color: #2A59A3;
+  font-size: 20px;
+}
+
+.dia {
+  text-align: center;
+  margin-left: 5%;
+}
+
+.chUV {
+  color: #2A59A3;
+}
+
+.elecard {
+  margin-bottom: 6%;
+}
+
+.climaIcon {
+  height: 15vh;
+  padding-bottom: 5%;
+}
+
+.modal-body {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.modal-body .card-title {
+  text-align: center;
+  font-size: 20px;
+}
+
+.modal-body .climaIcon {
+  margin-left: 3vw;
+  margin-bottom: 0;
+  height: 20vh;
+  padding: 0;
+}
+
+.modal-body .prev-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5%;
+}
+
+.modal-body .tempoMm {
+  text-align: center;
+  font-size: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0;
+}
+
+.modal-body .card {
+  border-width: 1px;
+  border-color: #2A59A3;
+  border-radius: 15px;
+}
+
+.modal-body .card-body {
+  background-color: #d7e3f5;
+  border-radius: 15px;
+}
+
+.tempHome {
+  margin: 0 0 0 5vw;
+}
+
+.prevWHole .tempSemana {
+  text-align: center;
+  margin-left: 10%;
+  margin-bottom: 0;
+  margin-top: 15%;
+}
+
+.prevWHole .climaSemana {
+  height: 6vh;
+  margin-top: 7%;
+  margin-bottom: 5%;
+}
+
+.prevWHole .card-title {
+  margin-bottom: 5%;
+  margin-left: 10%;
+}
+
+.tempSemana {
+  text-align: center;
+  margin-left: 10%;
+  margin-bottom: 0;
+  margin-top: 5%;
+}
+
+.climaSemana {
+  height: 7vh;
+  margin-top: 5%;
+}
+
+.iconesUv {
+  height: 15vh;
+  margin-right: 5%;
+}
+
+.icones {
+  height: 10vh;
+  margin-right: 5%;
+}
+
+.umid {
+  margin-left: 7%;
+  margin-right: 5%;
+}
+
+.UVFCTEXT {
+  padding-top: 20%;
+  font-size: 30px;
+  margin-left: 10%;
+}
+
+.medir {
+  background-color: #29579f;
+  border-radius: 18px;
+  border: 1px solid #4e6096 !important;
+  display: inline-block;
+  cursor: pointer;
+  color: #f4f4f4;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  width: 30vw;
+  height: 5vh;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+
+.medir:hover {
+  background-color: #ffb905 !important;
+  color: #202020 !important;
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  font-weight: bold;
+  border: 1px solid #4e6096 !important;
+}
+
+.medir:active {
+  position: relative;
+  top: 1px;
+  background-color: #ffb905 !important;
+  color: #202020 !important;
+  font-weight: bold;
+}
+
+.previsaoAPI {
+  margin-top: 4vh;
+  margin-left: 14vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 5vw;
+}
+
+.botaoum {
+  margin-top: 2vh;
+  margin-left: 25vw;
+  margin-right: 17vw;
+}
+
+.inactive {
+  display: none;
+}
+/*# sourceMappingURL=sass.css.map */
