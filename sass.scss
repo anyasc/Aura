@@ -28,7 +28,9 @@ body{
     background-color:$primary-colour;
     height: auto;
     width: 100vw;
+    padding: 1%!important;
 }
+
 
 h1{
     text-align: center;
@@ -77,14 +79,15 @@ h6{
     border-color: #7c7c7c;
     border-width: 2px;
     width: 100%;
-    height: 105vw;
+    height: auto;
     border-radius: 3%;
     margin-bottom: 10%;
 
     .modal-content{
-        margin-left: 2%;
+        
         margin-top: 5%;
-        width: 85%;
+       
+        
     }
     
 }
@@ -92,6 +95,7 @@ h6{
 .modal-backdrop{
     height: 120vh;
     width: 100%;
+    
 }
 
 
@@ -214,7 +218,7 @@ h6{
         border-width: 3px;
         border-color: darken($primary-colour, 10%);
         height: 50px;
-        width: 360px;
+        width: 90vw;
         color: #212529!important;
         font-size: 18px;
         letter-spacing: 1px;
@@ -233,7 +237,7 @@ h6{
     .col-5{
         margin-bottom: 3%;
         padding-top: 0;
-        padding-left: 6%;
+        padding-left: 3%;
     }
 
     .bluetoothDisable{
@@ -266,15 +270,10 @@ h6{
             border-width: 5px;
             border-color: darken($quinary-colour, 20%);
         }
-
-
-        .modal-content{
-            margin-left: 2%;
-            width: 100%!important;
-
-        }
-
     } 
+
+
+
 }
 
 #content {
@@ -316,10 +315,7 @@ h6{
     font-size: 70px;
     padding: 15px 15px 0 15px;
 }
-.prev-info {
-    margin: 0 0 0 10%;
 
-}
 
 .cidade{
     margin-bottom: 5%;
@@ -342,10 +338,9 @@ h6{
 
 .climaIcon{
     height: 15vh;
-    margin: 5%;
+    
     padding-bottom: 5%;
 }
-
 
 
 .modal-body{
@@ -359,18 +354,13 @@ h6{
         
     }
     .climaIcon{
-        margin-left: 60%;
-        
- 
+        margin-left: 3vw;
         margin-bottom: 0;
         height: 20vh;
         padding: 0;
     }
 
     .prev-info{
-        margin-top: 5%;
-        margin-bottom: 10%;
-        margin-left: 0%!important;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -384,8 +374,7 @@ h6{
         align-items: center;
         justify-content: center;
         margin-bottom: 0;
-        margin-left: 0!important;
-        margin-right: 4%;        
+      
     }
 
     .card{
@@ -402,17 +391,12 @@ h6{
 }
 
 
-
+.tempHome{
+    margin: 0 0 0 5vw;
+}
 .prevWHole{
 
-    .historicoLua{
-        margin-left: 30%;
-        width: 12vw;
-    }
-    
-    .historico{
-        margin-left: 20%;
-    }
+
     
     .tempSemana{
         text-align: center;
@@ -437,14 +421,7 @@ h6{
 
 
 
-.historicoLua{
-    margin-left: 30%;
-    width: 12vw;
-}
 
-.historico{
-    margin-left: 20%;
-}
 
 .tempSemana{
     text-align: center;
@@ -483,16 +460,6 @@ h6{
 }
 
 
-.previsaoAPI{
-    
-    text-align: center;
-    color:$primary-colour;
-    margin: 10% 20% 10% 10%;
-    
-
-}
-
-
 
 .UVFCTEXT{
     padding-top: 20%; 
@@ -511,10 +478,12 @@ h6{
 	color:$white;
 	font-family: 'Montserrat', sans-serif;
 	font-size:16px;
-
+    width:30vw;
+    height: 5vh;
 	padding:5px 15px;
 	text-decoration:none;
-	
+    
+        
 
         &:hover {
             background-color: $tertiary-colour!important;
@@ -533,13 +502,20 @@ h6{
         }
 }
 
+.previsaoAPI{
+ 
+    margin-top: 4vh; 
+    margin-left: 14vw;
+    display: flex;
+    padding-left: 5vw;
+}
 
 
 .botaoum{
-    margin-top: 5%;
-    margin-left: 22%;
-    margin-right: 20%;
-    padding-right: 50%;
+    margin-top: 2vh;
+    margin-left: 25vw;
+    margin-right: 17vw;
+    
    
 
 }

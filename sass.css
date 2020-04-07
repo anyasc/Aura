@@ -405,7 +405,7 @@ input:checked + .slider:before {
   color: #f4f4f4;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  width: 45vw;
+  width: 30vw;
   height: 5vh;
   padding: 5px 15px;
   text-decoration: none;
@@ -430,24 +430,16 @@ input:checked + .slider:before {
 
 .previsaoAPI {
   margin-top: 4vh;
-  margin-left: 10vw;
+  margin-left: 14vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-@media screen and (max-width: 992px) {
-  .previsaoAPI {
-    width: 50vw;
-    margin-left: 6vw;
-    padding-left: 8%;
-    text-align: center;
-  }
+  padding-left: 5vw;
 }
 
 .botaoum {
   margin-top: 2vh;
-  margin-left: 20vw;
+  margin-left: 25vw;
   margin-right: 17vw;
 }
 
