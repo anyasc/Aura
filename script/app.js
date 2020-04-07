@@ -13,7 +13,6 @@ let localConfig = {
   beberAgua: document.querySelector("#aguaCheck"),
   pulseira: document.querySelector("#pulseiraCheck")
 }
-console.log(localConfig)
 
 window.addEventListener("load", function () {
   let today = new Date();
