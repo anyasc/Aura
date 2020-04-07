@@ -15,6 +15,7 @@ body {
   background-color: #2A59A3;
   height: auto;
   width: 100vw;
+  padding: 1% !important;
 }
 
 h1 {
@@ -52,15 +53,13 @@ h6 {
   border-color: #7c7c7c;
   border-width: 2px;
   width: 100%;
-  height: 105vw;
+  height: auto;
   border-radius: 3%;
   margin-bottom: 10%;
 }
 
 .card .modal-content {
-  margin-left: 2%;
   margin-top: 5%;
-  width: 85%;
 }
 
 .modal-backdrop {
@@ -165,7 +164,7 @@ input:checked + .slider:before {
   border-width: 3px;
   border-color: #20437a;
   height: 50px;
-  width: 360px;
+  width: 90vw;
   color: #212529 !important;
   font-size: 18px;
   letter-spacing: 1px;
@@ -185,7 +184,7 @@ input:checked + .slider:before {
 .buttonGrid .col-5 {
   margin-bottom: 3%;
   padding-top: 0;
-  padding-left: 6%;
+  padding-left: 3%;
 }
 
 .buttonGrid .bluetoothDisable {
@@ -266,10 +265,6 @@ input:checked + .slider:before {
   padding: 15px 15px 0 15px;
 }
 
-.prev-info {
-  margin: 0 0 0 10%;
-}
-
 .cidade {
   margin-bottom: 5%;
   color: #2A59A3;
@@ -291,7 +286,6 @@ input:checked + .slider:before {
 
 .climaIcon {
   height: 15vh;
-  margin: 5%;
   padding-bottom: 5%;
 }
 
@@ -306,16 +300,12 @@ input:checked + .slider:before {
 }
 
 .modal-body .climaIcon {
-  margin-left: 60%;
   margin-bottom: 0;
   height: 20vh;
   padding: 0;
 }
 
 .modal-body .prev-info {
-  margin-top: 5%;
-  margin-bottom: 10%;
-  margin-left: 0% !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,8 +332,6 @@ input:checked + .slider:before {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 0;
-  margin-left: 0 !important;
-  margin-right: 4%;
 }
 
 .modal-body .card {
@@ -355,6 +343,10 @@ input:checked + .slider:before {
 .modal-body .card-body {
   background-color: #d7e3f5;
   border-radius: 15px;
+}
+
+.tempHome {
+  margin: 0 0 0 5vw;
 }
 
 .prevWHole .historicoLua {
@@ -420,12 +412,6 @@ input:checked + .slider:before {
   margin-right: 5%;
 }
 
-.previsaoAPI {
-  text-align: center;
-  color: #2A59A3;
-  margin: 10% 20% 10% 10%;
-}
-
 .UVFCTEXT {
   padding-top: 20%;
   font-size: 30px;
@@ -441,6 +427,8 @@ input:checked + .slider:before {
   color: #f4f4f4;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  width: 45vw;
+  height: 5vh;
   padding: 5px 15px;
   text-decoration: none;
 }
@@ -462,11 +450,27 @@ input:checked + .slider:before {
   font-weight: bold;
 }
 
+.previsaoAPI {
+  margin-top: 4vh;
+  margin-left: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 992px) {
+  .previsaoAPI {
+    width: 50vw;
+    margin-left: 6vw;
+    padding-left: 8%;
+    text-align: center;
+  }
+}
+
 .botaoum {
-  margin-top: 5%;
-  margin-left: 22%;
-  margin-right: 20%;
-  padding-right: 50%;
+  margin-top: 2vh;
+  margin-left: 20vw;
+  margin-right: 17vw;
 }
 
 .inactive {

@@ -70,15 +70,15 @@
                         </div>
                     </div>
 
-                    <div class="botaoum col">
+                    <div class="botaoum col-3" style="padding-left: 0;">
                         <button class="medir" id="update-btn">Medir com Aura</button>
                     </div>
                 </div>
             </div>
 
+<!--                     /////////////////      //      API    //        /////////////////////                  -->
 
-
-            <div class="card" id="previsao" style="height: 75vw;">
+            <div class="card" id="previsao">
                 <div class="card-body">
                     <div class="container">
                         <div class="row" style="margin-left: 0!important;">
@@ -88,28 +88,28 @@
                             <h5 class="card-title prev-title cidade">São Paulo</h5>
                         </div>
                         <div class="row">
-                            <div class="col-5 prev-icon" style="padding: 0%;">
+                            <div class="col-5 prev-icon" style="padding: 0%; margin-left: 0;">
 
                                 <img src="./img/lua_chuva.svg" alt='icone representando uma noite com chuva'
                                     class="climaIcon">
                             </div>
-                            <div class="col-6 prev-text">
+                            <div class="col-7 prev-text" >
 
-                                <p class="card-title prev-title" style="margin-top: 1%; margin-left: 10%; " id="hoje">
+                                <p class="card-title prev-title" style="margin-top: 1%; margin-left: 5vw; " id="hoje">
                                     ?</p>
-                                <p class="prev-info"><strong>Máxima:</strong><span id="tempMax">-</span>&degC</p>
-                                <p class="prev-info"><strong>Mínima:</strong><span id="tempMin">-</span>&degC</p>
-                                <p class="prev-info"><strong>Chuva:</strong><span id="chuva">-</span>%</p>
+                                <p class="prev-info tempHome"><strong>Máxima:</strong><span id="tempMax">-</span>&degC</p>
+                                <p class="prev-info tempHome"><strong>Mínima:</strong><span id="tempMin">-</span>&degC</p>
+                                <p class="prev-info tempHome"><strong>Chuva:</strong><span id="chuva">-</span>%</p>
                             </div>
 
 
-                            <!-- /////////////////////////////////////////////////// -->
+                 <!-- //////////////////////////               botao                 ///////////////////////// -->
 
                         </div>
                         <div class='row semana'>
 
                             <div class="container-fluid">
-                                <div style='padding-left: 5%'>
+                                <div>
                                     <!-- Trigger the modal with a button -->
                                     <button type="button" class="btn btn-info btn-lg medir previsaoAPI"
                                         data-toggle="modal" style='background-color:#29579f ;'
@@ -120,7 +120,9 @@
 
 
 
-                                <!-- Modal ------------------------------------------------------------------------------------------>
+                                <!-- ////////////////////////////            Modal            //////////////////////////  -->
+
+
                                 <div class="modal fade" id="myModal" role="dialog">
                                     <div class="modal-dialog">
 
@@ -133,7 +135,7 @@
 
                                             </div>
                                             <div class="modal-body">
-                                                <div class="container">
+                                                <div class="container" style="padding: 0;">
 
 
                                                     <h5 class="card-title prev-title cidade" style="margin-right: 10%;">
@@ -145,16 +147,18 @@
 
 
                                                     <div class="row">
-                                                        <div class="col prev-icon" style="padding-right: 80%;">
+                                                        <div class="col-5 prev-icon" style="margin-left: 8vw;">
                                                             <img src="./img/lua_chuva.svg"
                                                                 alt='icone representando uma noite com chuva'
                                                                 class="climaIcon">
                                                         </div>
                                                     </div>
 
+                                                <!-- tempo -->
+
                                                     <div class="row">
 
-                                                        <p class="prev-info tempoMm" style="margin-left: 10%;">
+                                                        <p class="prev-info tempoMm" style="margin-left: 5vw;">
                                                             <strong><span id="compTempMin"></span></strong>&degC</p>
 
                                                         <p class="prev-info tempoMm"><strong>/</strong></p>
@@ -164,16 +168,17 @@
 
                                                     </div>
 
+                                                
+                                                        <!-- chuva e uv -->
 
-
-                                                    <div class="card" style="height: 10vh;">
-                                                        <div class="card-body">
+                                                    <div class="card" style="height: 10vh; ">
+                                                        <div class="card-body" style=" padding: 5vw;">
                                                             <div class="row">
                                                                 <div class="col-6">
                                                                     <p class="prev-info"><strong class="chUV">Chuva:
                                                                         </strong><span id="compChuva"></span>%</p>
                                                                 </div>
-                                                                <div class="col-6">
+                                                                <div class="col-5">
                                                                     <p class="prev-info"><strong class="chUV">UV:
                                                                         </strong> Baixo</p>
                                                                 </div>
@@ -182,8 +187,9 @@
                                                     </div>
 
 
+                                                                        <!-- tempo semana -->
 
-                                                    <div class="card" style="height: 20vh;">
+                                                    <div class="card" style="height: 22vh;">
                                                         <div class="card-body" style="padding-right: 5%;">
                                                             <div class="row" style="padding-left: 0; margin-left: 0;">
                                                                 <div class="col-3"
