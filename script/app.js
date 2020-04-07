@@ -3,7 +3,8 @@ const tempMax = document.querySelector("#tempMax");
 const tempMin = document.querySelector("#tempMin");
 const semana = ["Domingo", "Segunda-feira", "Terça-Feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
 const semanaAbr = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"];
-const mes = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+const mes = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+const configChar = ["Q", "F", "S", "U", "A", "P"]
 let localConfig = {
   tempAlta: document.querySelector("#tempAltaCheck"),
   tempBaixa: document.querySelector("#tempBaixaCheck"),
@@ -42,7 +43,7 @@ window.addEventListener("load", function () {
               if (value[item] === 0) {
                 uncheck(localConfig[item])
               } else {
-                check(localConfig[item])
+                check(localConfig[item]);
               }
             })
           })
@@ -65,7 +66,7 @@ window.addEventListener("load", function () {
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker
-      .register('../sw.js')
+      .register('./sw.js')
       .then(reg => console.log(`Service Worker registered ${reg}`))
       .catch(err => console.log(`Error: ${err}`));
   });
@@ -138,13 +139,32 @@ Object.keys(localConfig).forEach(item => {
 
 function updateConfig() {
   let newConfig = {};
+  let i = 0;
   Object.keys(localConfig).forEach(item => {
     if (localConfig[item].checked === true) {
-      newConfig[item] = 1
+      newConfig[item] = 1;
+      send(configChar[i].toUpperCase);
     } else {
       newConfig[item] = 0
+      send(configChar[i].toLowerCase);
     }
   })
   localforage.setItem("config", newConfig)
     .then(value => console.log(value))
+}
+
+
+function createAlert(num, categoria) {
+  let alert = document.createElement("div");
+  alert.innerHTML = `
+    <div class="alert  alert-${categoria.toLowerCase()} alert-dismissible fade show" style="padding-right: 10%;">
+      <h4 class="alert-heading"> Alerta: ${num}</h4>
+      <img src="./img/alerta01.svg" class="iconeAlerta">
+      A umidade do ar está baixa. <strong>Evite a prática de atividades ao ar livre.</strong>.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  `;
+  document.querySelector("#alert-div").appendChild(alert);
 }

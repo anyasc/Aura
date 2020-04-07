@@ -3,7 +3,8 @@
 const updateBtn = document.querySelector("#update-btn");
 updateBtn.addEventListener("click", e => {
   e.preventDefault();
-  sendData("u")
+  send("u");
+  updateConfig();
 })
  
 // Storing Device and Characteristics info
@@ -40,6 +41,7 @@ function connect() {
     then(() => {
       update_connect_bt('disconnect');
     }).
+    then(() => send("l")).
     catch(error => log(error));
 }
 
@@ -188,33 +190,35 @@ function handleDisconnection(event) {
       catch(error => log(error));
 }
 
-function sendData(data) {
+
+function send(data) {
   data = String(data);
-  if (!data) {
-    console.log('Nenhum dado a ser enviado');
+
+  if (!data || !characteristicCache) {
     return;
   }
-  else if (data.length > 20) {
-    console.log('Mensagem deve ser limitada a 20 bytes');
-    return;
+
+  data += '\n';
+
+  if (data.length > 20) {
+    let chunks = data.match(/(.|[\r\n]){1,20}/g);
+
+    writeToCharacteristic(characteristicCache, chunks[0]);
+
+    for (let i = 1; i < chunks.length; i++) {
+      setTimeout(() => {
+        writeToCharacteristic(characteristicCache, chunks[i]);
+      }, i * 100);
+    }
   }
-  // envia os dados para o device
-  characteristicCache.writeValue(new TextEncoder().encode(data));
-  console.log('Dados enviados: '+data)
+  else {
+    writeToCharacteristic(characteristicCache, data);
+  }
+
+  log(data, 'out');
 }
 
-
-function createAlert(num, categoria) {
-  let alert = document.createElement("div");
-  alert.innerHTML = `
-    <div class="alert  alert-${categoria} alert-dismissible fade show" style="padding-right: 10%;">
-      <h4 class="alert-heading"> Alerta ${num}</h4>
-      <img src="./img/alerta01.svg" class="iconeAlerta">
-      A umidade do ar está baixa. <strong>Evite a prática de atividades ao ar livre.</strong>.
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-  `;
-  document.querySelector("#alert-div").appendChild(alert);
+function writeToCharacteristic(characteristic, data) {
+  characteristic.writeValue(new TextEncoder().encode(data));
 }
+
