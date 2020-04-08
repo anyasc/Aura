@@ -443,6 +443,10 @@ input:checked + .slider:before {
   margin-right: 17vw;
 }
 
+.config {
+  width: 100vw;
+}
+
 .inactive {
   display: none;
 }
