@@ -266,6 +266,10 @@ input:checked + .slider:before {
   font-size: 20px;
 }
 
+.text-center {
+  left: 10;
+}
+
 .dia {
   text-align: center;
   margin-left: 5%;
@@ -391,9 +395,16 @@ input:checked + .slider:before {
 }
 
 .UVFCTEXT {
+  padding-top: 5%;
+  font-size: 40px;
+  margin-left: 5vw;
+  font-weight: lighter;
+}
+
+.uvText {
   padding-top: 20%;
-  font-size: 30px;
-  margin-left: 10%;
+  font-size: 7vw;
+  margin-left: 5vw;
 }
 
 .medir {
