@@ -31,12 +31,13 @@ h6 {
   text-align: center;
 }
 
-.logoBranco {
-  width: 120px !important;
+
+
+.logoHome {
+  width: 25vw!important;
   height: auto;
-  font-size: 12px;
-  margin-left: 30%;
-  margin-right: 40%;
+  margin-left: 32vw;
+  margin-right: 15vw;
   margin-bottom: 20px;
   margin-top: 10px;
 }
