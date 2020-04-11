@@ -300,12 +300,12 @@ function updateAPI() {
     .then(data => {
       document.querySelector("#tempMax").innerText = Math.round(data.daily.data[0].temperatureHigh);
       document.querySelector("#tempMin").innerText = Math.round(data.daily.data[0].temperatureLow);
-      document.querySelector("#chuva").innerText = data.daily.data[0].precipProbability * 100;
+      document.querySelector("#chuva").innerText = Math.round(data.daily.data[0].precipProbability * 100);
       document.querySelector("#umidHoje").innerText = data.daily.data[0].humidity * 100;
       
       document.querySelector("#compTempMax").innerText = Math.round(data.daily.data[0].temperatureHigh);
       document.querySelector("#compTempMin").innerText = Math.round(data.daily.data[0].temperatureLow);
-      document.querySelector("#compChuva").innerText = data.daily.data[0].precipProbability * 100;
+      document.querySelector("#compChuva").innerText = Math.round(data.daily.data[0].precipProbability * 100);
       
       document.querySelector("#amanhaTempMax").innerText = Math.round(data.daily.data[1].temperatureHigh);
       document.querySelector("#amanhaTempMin").innerText = Math.round(data.daily.data[1].temperatureLow);
