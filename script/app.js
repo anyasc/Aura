@@ -310,14 +310,14 @@ function updateAPI() {
       document.querySelector("#amanhaTempMax").innerText = Math.round(data.daily.data[1].temperatureHigh);
       document.querySelector("#amanhaTempMin").innerText = Math.round(data.daily.data[1].temperatureLow);
       
-      document.querySelector("#daTempMax").innerText = Math.round(data.daily.data[1].temperatureHigh);
-      document.querySelector("#daTempMin").innerText = Math.round(data.daily.data[1].temperatureLow);
+      document.querySelector("#daTempMax").innerText = Math.round(data.daily.data[2].temperatureHigh);
+      document.querySelector("#daTempMin").innerText = Math.round(data.daily.data[2].temperatureLow);
       
-      document.querySelector("#ddaTempMax").innerText = Math.round(data.daily.data[1].temperatureHigh);
-      document.querySelector("#ddaTempMin").innerText = Math.round(data.daily.data[1].temperatureLow);
+      document.querySelector("#ddaTempMax").innerText = Math.round(data.daily.data[3].temperatureHigh);
+      document.querySelector("#ddaTempMin").innerText = Math.round(data.daily.data[3].temperatureLow);
       
-      document.querySelector("#dddaTempMax").innerText = Math.round(data.daily.data[1].temperatureHigh);
-      document.querySelector("#dddaTempMin").innerText = Math.round(data.daily.data[1].temperatureLow);
+      document.querySelector("#dddaTempMax").innerText = Math.round(data.daily.data[4].temperatureHigh);
+      document.querySelector("#dddaTempMin").innerText = Math.round(data.daily.data[4].temperatureLow);
       
       document.querySelector("#iconPrevHoje").innerHTML = iconSwitch(data.daily.data[0].icon) + ' class="climaIcon">';
       document.querySelector("#iconPrevHojeModal").innerHTML = iconSwitch(data.daily.data[0].icon) + ' class="climaIcon">';
