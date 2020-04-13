@@ -264,7 +264,7 @@ window.addEventListener("load", function () {
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker
-      .register('./sw.js')
+      .register('./script/sw.js')
       .then(reg => console.log(`Service Worker registered ${reg}`))
       .catch(err => console.log(`Error: ${err}`));
   });
